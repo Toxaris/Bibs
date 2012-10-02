@@ -32,6 +32,8 @@ Conferences:
 @string{MFPS    = ProcOf # "Conference on Mathematical Foundations of Programming Semantics"}
 @string{WG2_1   = ProcOf # "IFIP TC2/WG2.1 Working Conference on Generic Programming"}
 @string{PLDI    = ProcOf # "Conference on Programming Language Design and Implementation"}
+@string{PLILPS  = ProcOf # "Symposium on Programming Languages: Implementations, Logics and Programs"}
+@string{ASIAN   = ProcOf # "Asian Computing Science Conference"}
 
 Publishers:
 
@@ -45,9 +47,13 @@ Publishers:
 @string{IEEE                      =  "IEEE Computer Society Press"}
 @string{Kluwer                    =  "Kluwer Academic Publishers"}
 @string{MIT                       =  "Massachusetts Institute of Technology"}
+@string{PrenticeHall              =  "Prentice-Hall, Inc."}
+@string{AarhusUniversity          =  "University of Aarhus"}
 
 Countries:
 
+@string{EE = ", Estonia"}
+@string{DE = ", Germany"}
 @string{GB = ", United Kingdom"}
 @string{IE = ", Ireland"}
 @string{JP = ", Japan"}
@@ -114,25 +120,33 @@ Towns:
 @string{Amsterdam           = "Amsterdam"               #  NL}
 @string{Atlanta             = "Atlanta"                 #  US-GA}
 @string{Baltimore           = "Baltimore"               #  US-MD}
+@string{Berlin              = "Berlin"                  #  DE}
 @string{Boston              = "Boston"                  #  US-MA}
 @string{Cambdrige           = "Cambridge"               #  US-MA}
+@string{Charleston          = "Charleston"              #  US-SC}
 @string{Deventer            = "Deventer"                #  NL}
 @string{Dublin              = "Dublin"                  #  IE}
 @string{Essex               = "Essex"                   #  GB}
+@string{Heidelberg          = "Heidelberg"              #  DE}
 @string{Hingham             = "Hingham"                 #  US-MA}
 @string{Ithaca              = "Ithaca"                  #  US-NY}
 @string{LaJolla             = "La Jolla"                #  US-CA}
+@string{LasVegas            = "Las Vegas"               #  US-NV}
 @string{London              = "London"                  #  GB}
 @string{Nashville           = "Nashville"               #  US-TN}
+@string{NewHaven            = "New Haven"               #  US-CT}
 @string{NewYork             = "New York"                #  US-NY}
 @string{Nijmegen            = "Nijmegen"                #  NL}
 @string{Philadelphia        = "Philadelphia"            #  US}
 @string{SaltLakeCity        = "Salt Lake City"          #  US-UT}
+@string{SanAntonio          = "San Antonio"             #  US-TX}
 @string{SanFrancisco        = "San Francisco"           #  US-CA}
+@string{Secaucus            = "Secaucus"                #  US-NJ}
 @string{StPetersburgBeach   = "St. Petersburg Beach"    #  US-FL}
+@string{Talinn              = "Tallinn"                 #  ES}
 @string{Tokyo               = "Tokyo"                   #  JP}
+@string{UpperSaddleRiver    = "Upper Saddle River"      #  US-NJ}
 @string{Uppsala             = "Uppsala"                 #  SE}
-
 
 Papers:
 
@@ -790,4 +804,286 @@ Papers:
   publisher     = ACM,
   address       = NewYork,
   keywords      = {lambda calculus, language design, reflection, self interpretation, types},
+}
+
+@inproceedings{consel93tutorial,
+  author        = {Consel, Charles and
+                   Danvy, Olivier},
+  title         = {Tutorial Notes on Partial Evaluation},
+  booktitle     = POPL,
+  year          = {1993},
+  location      = Charleston,
+  pages         = {493--Ef501},
+  url           = {http://doi.acm.org/10.1145/158511.158707},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{glueck95efficient,
+  author        = {Gl\"{u}ck, Robert and
+                   J{\o}rgensen, Jesper},
+  title         = {Efficient Multi-level Generating Extensions for Program Specialization},
+  booktitle     = PLILPS,
+  year          = {1995},
+  pages         = {259--278},
+  url           = {http://dl.acm.org/citation.cfm?id=646445.692151},
+  publisher     = Springer,
+  address       = London,
+}
+
+@inproceedings{taha00sound,
+  author        = {Taha, Walid},
+  title         = {A Sound Reduction Semantics for Untyped CBN Multi-Stage Computation. Or, the Theory of MetaML is Non-trival (Extended Abstract)},
+  booktitle     = PEPM,
+  year          = {2000},
+  location      = Boston,
+  pages         = {34--43},
+  url           = {http://doi.acm.org/10.1145/328690.328697},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{taha97multi-stage,
+  author        = {Taha, Walid and
+                   Sheard, Tim},
+  title         = {Multi-stage Programming with Explicit Annotations},
+  booktitle     = PEPM,
+  year          = {1997},
+  location      = Amsterdam,
+  pages         = {203--217},
+  url           = {http://doi.acm.org/10.1145/258993.259019},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@book{jones93partial,
+  author        = {Jones, Neil D. and
+                   Gomard, Carsten K. and
+                   Sestoft, Peter},
+  title         = {Partial Evaluation and Automatic Program Generation},
+  year          = {1993},
+  publisher     = PrenticeHall,
+  address       = UpperSaddleRiver
+}
+
+@inproceedings{rhiger12staged,
+  author        = {Rhiger, Morten},
+  title         = {Staged Computation with Staged Lexical Scope},
+  booktitle     = ESOP,
+  year          = {2012},
+  location      = Tallinn,
+  pages         = {559--578},
+  url           = {http://dx.doi.org/10.1007/978-3-642-28869-2_28},
+  publisher     = Springer,
+  address       = Berlin # ", " # Heidelberg,
+}
+
+@inproceedings{holst91partial,
+  author        = {Holst, Carsten Kehler and
+                   Gomard, Darsten Krogh},
+  title         = {Partial Evaluation is Fuller Laziness},
+  booktitle     = PEPM,
+  year          = {1991},
+  location      = NewHaven,
+  pages         = {223--233},
+  url           = {http://doi.acm.org/10.1145/115865.115890},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@misc{filinski03denotational,
+  author        = {Andrzej Filinski and
+                   Henning Korsholm Rohde},
+  title         = {A Denotational Account of Untyped Normalization by Evaluation},
+  year          = {2003}
+}
+
+@inproceedings{danvy96type-directed,
+  author        = {Danvy, Olivier},
+  title         = {Type-directed Partial Evaluation},
+  booktitle     = POPL,
+  year          = {1996},
+  location      = StPetersburgBeach,
+  pages         = {242--257},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@article{danvy01normalization,
+  author        = {Danvy, Olivier and
+                   Rhiger, Morten and
+                   Rose, Kristoffer H.},
+  title         = {Normalization by Evaluation with Typed Abstract Syntax},
+  journal       = JFP,
+  volume        = {11},
+  number        = {6},
+  month         = nov,
+  year          = {2001},
+  pages         = {673--680},
+  publisher     = CambridgeUniversityPress,
+  address       = NewYork,
+}
+
+@article{danvy96eta-expansion,
+  author        = {Danvy, Olivier and
+                   Malmkj\aer, Karoline and
+                   Palsberg, Jens},
+  title         = {Eta-expansion does The Trick},
+  journal       = TOPLAS,
+  volume        = {18},
+  number        = {6},
+  month         = nov,
+  year          = {1996},
+  pages         = {730--751},
+  publisher     = ACM,
+  address       = NewYork,
+  keywords      = {binding-time analysis and improvement, eta-expansion, partial evaluation, program specialization, static reduction},
+}
+
+@inproceedings{sperber97two,
+  author        = {Sperber, Michael and
+                   Thiemann, Peter},
+  title         = {Two for the price of one: composing partial evaluation and compilation},
+  booktitle     = PLDI,
+  year          = {1997},
+  location      = LasVegas,
+  pages         = {215--225},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{kameyama08closing,
+  author        = {Kameyama, Yukiyoshi and
+                   Kiselyov, Oleg and
+                   Shan, Chung-chieh},
+  title         = {Closing the Stage: From Staged Code to Typed Closures},
+  booktitle     = PEPM,
+  year          = {2008},
+  location      = SanFrancisco,
+  pages         = {147--157},
+  url           = {http://doi.acm.org/10.1145/1328408.1328430},
+  publisher     = ACM,
+  address       = NewYork,
+  keywords      = {closures, multistage programming, mutable state and control effects, parametric polymorphism, type abstraction},
+}
+
+@inproceedings{grobauer00second,
+  author        = {Grobauer, Bernd and
+                   Yang, Zhe},
+  title         = {The Second {Futamura} Projection for Type-Directed Partial Evaluation},
+  booktitle     = PEPM,
+  year          = {2000},
+  location      = Boston,
+  pages         = {22--32},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{rhigher99deriving,
+  author        = {Rhiger, Morten},
+  title         = {Deriving a Statically Typed Type-Directed Partial Evaluator},
+  booktitle     = PEPM,
+  year          = {1999},
+  pages         = {25--29},
+  editor        = {Danvy, Olivier},
+  location      = SanAntonio,
+  publisher     = AarhusUniversity,
+  year          = {1999},
+}
+
+@inproceedings{danvy99type-directed,
+  author        = {Danvy, Olivier},
+  title         = {Type-Directed Partial Evaluation},
+  booktitle     = {Partial Evaluation - Practice and Theory, DIKU 1998 International Summer School},
+  year          = {1999},
+  pages         = {367--411},
+  publisher     = Springer,
+  address       = London,
+  url           = {http://cs.au.dk/~danvy/tdpe-ln.pdf}
+}
+
+@inproceedings{yang98encoding,
+  author        = {Yang, Zhe},
+  title         = {Encoding Types in ML-like Languages},
+  booktitle     = ICFP,
+  year          = {1998},
+  location      = Baltimore,
+  pages         = {289--300},
+  url           = {http://doi.acm.org/10.1145/289423.289458},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@article{taha00metaml,
+  author        = {Taha, Walid and
+                   Sheard, Tim},
+  title         = {{MetaML} and Multi-stage Programming with Explicit Annotations},
+  journal       = TCS,
+  volume        = {248},
+  number        = {1-2},
+  month         = oct,
+  year          = {2000},
+  pages         = {211--242},
+  url           = {http://dx.doi.org/10.1016/S0304-3975(00)00053-0},
+  publisher     = ElsevierScience,
+  address       = Essex,
+}
+
+@misc{danvy88across,
+  author        = {Danvy, Olivier},
+  title         = {Across the Bridge between Reflection and Partial Evaluation},
+  booktitle     = {Partial Evaluation and Mixed Computation},
+  year          = {1988},
+}
+
+@inproceedings{moggi99idealized,
+  author        = {Moggi, Eugenio and
+                   Taha, Walid and
+                   Benaissa, Zine-El-Abidine and
+                   Sheard, Tim},
+  title         = {An Idealized MetaML: Simpler, and More Expressive},
+  booktitle     = ESOP,
+  year          = {1999},
+  pages         = {193--207},
+  url           = {http://dl.acm.org/citation.cfm?id=645393.757557},
+  publisher     = Springer,
+  address       = London,
+}
+
+@inproceedings{helsen98two,
+  author        = {Helsen, Simon and
+                   Thiemann, Peter},
+  title         = {Two Flavors of Offline Partial Evaluaton},
+  booktitle     = ASIAN,
+  year          = {1998},
+  publisher     = Springer,
+}
+
+@inproceedings{danvy96pragmatics,
+  author        = {Danvy, Olivier},
+  title         = {Pragmatics of Type-Directed Partial Evaluation},
+  editor        = {Danvy, Olivier and
+                   Gl{\"u}eck, Robert and
+                   Thiemann, Peter},
+  booktitle     = {Selected Papers from the International Seminar on Partial Evaluation},
+  year          = {1996},
+  pages         = {73--94},
+  url           = {http://dl.acm.org/citation.cfm?id=647372.724042},
+  publisher     = Springer,
+  address       = London,
+}
+
+@article{freund03type,
+  author        = {Freund, Stephen N. and
+                   Mitchell, John C.},
+  title         = {A Type System for the Java Bytecode Language and Verifier},
+  journal       = {J. Autom. Reason.},
+  volume        = {30},
+  number        = {3-4},
+  month         = aug,
+  year          = {2003},
+  pages         = {271--321},
+  publisher     = Springer,
+  address       = Secaucus,
+  keywords      = {Java Virtual Machine, bytecode verification, type systems},
 }
