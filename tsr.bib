@@ -34,6 +34,8 @@ Conferences:
 @string{PLDI    = ProcOf # "Conference on Programming Language Design and Implementation"}
 @string{PLILPS  = ProcOf # "Symposium on Programming Languages: Implementations, Logics and Programs"}
 @string{ASIAN   = ProcOf # "Asian Computing Science Conference"}
+@string{FDPC    = ProcOf # "IFIP Working Conference on Formal Descriptions of Programming Concepts"}
+@string{SAIG    = ProcOf # "Workshop on Semantics, Applications, and Implementation of Program Generation"}
 
 Publishers:
 
@@ -1086,4 +1088,39 @@ Papers:
   publisher     = Springer,
   address       = Secaucus,
   keywords      = {Java Virtual Machine, bytecode verification, type systems},
+}
+
+@inproceedings{ershov78essence,
+  author        = {Ershov, A. P.},
+  title         = {On the Essence of Compilation},
+  booktitle     = FDPC,
+  year          = {1978},
+  pages         = {391--420},
+  editor        = {Neuhold, E. J.},
+  address       = Amsterdam,
+  publisher     = {North-Holland},
+}
+
+@inproceedings{makholm00jones-optimal,
+  author        = {Makholm, Henning},
+  title         = {On Jones-Optimal Specialization for Strongly Typed Languages},
+  booktitle     = SAIG,
+  year          = {2000},
+  pages         = {129--148},
+  publisher     = Springer,
+  editor        = {Taha, Walid},
+  location      = Montreal,
+  volume        = {LNCS 1924},
+}
+
+@inproceedings{pasalic02tagless,
+  author       = {Pa{\v{s}}ali{\'{c}}, Emir and
+                  Taha, Walid and
+                  Sheard, Tim},
+  title        = {Tagless Staged Interpreters for Typed Languages},
+  booktitle    = ICFP,
+  year         = {2002},
+  pages        = {218--229},
+  publisher    = {ACM},
+  address      = {New York},
 }
