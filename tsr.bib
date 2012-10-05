@@ -51,6 +51,8 @@ Publishers:
 @string{MIT                       =  "Massachusetts Institute of Technology"}
 @string{PrenticeHall              =  "Prentice-Hall, Inc."}
 @string{AarhusUniversity          =  "University of Aarhus"}
+@string{MelbourneUniversity       =  "University of Melbourne"}
+@string{GlasgowUniversity         =  "Glasgow University"}
 
 Countries:
 
@@ -62,6 +64,7 @@ Countries:
 @string{NL = ", The Netherlands"}
 @string{SE = ", Sweden"}
 @string{US = ", USA"}
+@string{AU = ", Australia"}
 
 States of the USA:
 
@@ -135,11 +138,13 @@ Towns:
 @string{LaJolla             = "La Jolla"                #  US-CA}
 @string{LasVegas            = "Las Vegas"               #  US-NV}
 @string{London              = "London"                  #  GB}
+@string{Melbourne           = "Melbourne"               #  AU}
 @string{Nashville           = "Nashville"               #  US-TN}
 @string{NewHaven            = "New Haven"               #  US-CT}
 @string{NewYork             = "New York"                #  US-NY}
 @string{Nijmegen            = "Nijmegen"                #  NL}
-@string{Philadelphia        = "Philadelphia"            #  US}
+@string{Orlando             = "Orlando"                 #  US-FL}
+@string{Philadelphia        = "Philadelphia"            #  US-PA}
 @string{SaltLakeCity        = "Salt Lake City"          #  US-UT}
 @string{SanAntonio          = "San Antonio"             #  US-TX}
 @string{SanFrancisco        = "San Francisco"           #  US-CA}
@@ -1179,4 +1184,80 @@ Papers:
   pages        = {75--94},
   publisher    = CambridgeUniversityPress,
   address      = NewYork,
+}
+
+@inproceedings{launchbury91strongly-typed,
+  author       = {Launchbury, John},
+  title        = {A Strongly-Typed Self-Applicable Partial Evaluator},
+  booktitle    = FPCA,
+  year         = {1991},
+  location     = Cambridge,
+  pages        = {145--164},
+  publisher    = Springer,
+  address      = NewYork,
+}
+
+@inproceedings{sheard97type-directed,
+  author       = {Sheard, Tim},
+  title        = {A Type-Directed, On-Line, Partial Evaluator for a Polymorphic Language},
+  booktitle    = PEPM,
+  year         = {1997},
+  location     = Amsterdam,
+  pages        = {22--35},
+  publisher    = ACM,
+  address      = NewYork,
+}
+
+Andersen. Self-applicable C program specialization. 1992.
+Master's thesis?
+
+@TECHREPORT{birkedal93partial,
+    author = {Lars Birkedal and Morten Welinder},
+    title = {Partial evaluation of Standard ML},
+    institution = {},
+    year = {1993}
+}
+
+The above is a Master's thesis.
+
+@inproceedings{bondorf94improving,
+  author       = {Bondorf, Anders and
+                  Dussart, Dirk},
+  title        = {Improving CPS-Based Partial Evaluation: Writing Cogen by Hand.},
+  booktitle    = PEPM,
+  pages        = {1--9},
+  publisher    = MelbourneUniversity # ", Department of Computer Science"
+  year         = {1994}
+  address      = Melbourne,
+  location     = Orlando
+}
+
+@inproceedings{thiemann96cogen,
+  author       = {Thiemann, Peter J.},
+  title        = {Cogen in six Lines},
+  booktitle    = ICFP,
+  year         = {1996},
+  location     = Philadelphia,
+  pages        = {180--189},
+  publisher    = ACM,
+  address      = NewYork,
+  keywords     = {continuations, multi-level computation, partial evaluation},
+}
+
+@inproceedings{launchbury91handwriting,
+  author       = {Launchbury, J. and
+                  Holst, C. K.},
+  title        = {Handwriting cogen to Avoid Problems with Static Typing},
+  booktitle    = "Draft " # ProcOf # "Glasgow Workshop on Functional Programming",
+  pages        = {210--218},
+  year         = {1991},
+  location     = Skye,
+  publisher    = GlasgowUniversity
+}
+
+@misc{helsen98flavors,
+  author       = {Helsen, Simon
+                  and Peter Thiemann},
+  title        = {Two Flavors of Offline Partial Evaluation},
+  year         = {1998}
 }
