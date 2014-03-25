@@ -10,6 +10,7 @@ Journals:
 @string{JACM            =  "Journal of the ACM"}
 @string{CACM            =  "Communications of the ACM"}
 @string{MSCS            =  "Mathematical Structures in Computer Science"}
+@string{JCSS            =  "Journal of Computer and System Sciences"}
 
 Conferences:
 
@@ -17,6 +18,7 @@ Conferences:
 
 @string{ICFP    = ProcOf # "International Conference on Functional Programming"}
 @string{GPCE    = ProcOf # "Conference on Generative Programming and Component Engineering"}
+@string{GTTSE   = ProcOf # "Summer School Conference on Generative and Transformational Techniques in Software Engineering"}
 @string{ESOP    = ProcOf # "European Symposium on Programming"}
 @string{MPC     = ProcOf # "Conference on Mathematics of Program Construction"}
 @string{IFL-S   = ProcOf # "Symposium on Implementation and Application of Functional Languages"}
@@ -35,6 +37,8 @@ Conferences:
 @string{PLILPS  = ProcOf # "Symposium on Programming Languages: Implementations, Logics and Programs"}
 @string{ASIAN   = ProcOf # "Asian Computing Science Conference"}
 @string{ECOOP   = ProcOf # "European Conference on Object-Oriented Programming"}
+@string{CC      = ProcOf # "Conference on Compiler Construction"}
+@string{SLE     = ProcOf # "Conference on Software Language Engineering"}
 
 Publishers:
 
@@ -51,6 +55,8 @@ Publishers:
 @string{PrenticeHall              =  "Prentice-Hall, Inc."}
 @string{AarhusUniversity          =  "University of Aarhus"}
 
+@string{LNCS                      =  "Springer LNCS "}
+
 Countries:
 
 @string{EE = ", Estonia"}
@@ -59,6 +65,7 @@ Countries:
 @string{IE = ", Ireland"}
 @string{JP = ", Japan"}
 @string{NL = ", The Netherlands"}
+@string{PT = ", Portugal"}
 @string{SE = ", Sweden"}
 @string{US = ", USA"}
 
@@ -123,6 +130,7 @@ Towns:
 @string{Baltimore           = "Baltimore"               #  US-MD}
 @string{Berlin              = "Berlin"                  #  DE}
 @string{Boston              = "Boston"                  #  US-MA}
+@string{Braga               = "Braga"                   #  PT}
 @string{Cambdrige           = "Cambridge"               #  US-MA}
 @string{Charleston          = "Charleston"              #  US-SC}
 @string{Deventer            = "Deventer"                #  NL}
@@ -144,7 +152,7 @@ Towns:
 @string{SanFrancisco        = "San Francisco"           #  US-CA}
 @string{Secaucus            = "Secaucus"                #  US-NJ}
 @string{StPetersburgBeach   = "St. Petersburg Beach"    #  US-FL}
-@string{Talinn              = "Tallinn"                 #  ES}
+@string{Talinn              = "Tallinn"                 #  EE}
 @string{Tokyo               = "Tokyo"                   #  JP}
 @string{UpperSaddleRiver    = "Upper Saddle River"      #  US-NJ}
 @string{Uppsala             = "Uppsala"                 #  SE}
@@ -354,7 +362,7 @@ Papers:
   booktitle     = {APLAS'07, extended version to appear in Journal of Functional  Programming},
   year          = {2007},
   pages         = {222-238},
-  publisher     = {Springer LNCS 4807},
+  publisher     = LNCS # "4807",
 }
 
 @article{carette09finally,
@@ -1154,163 +1162,164 @@ Papers:
 }
 
 @article{knuthags,
-  author = {Knuth, Donald E.},
-  journal = {Mathematical Systems Theory},
-  keywords = {dblp},
-  number = 2,
-  pages = {127-145},
-  title = {Semantics of Context-Free Languages.},
-  volume = 2,
-  year = 1968
+  author        = {Knuth, Donald E.},
+  title         = {Semantics of Context-Free Languages},
+  journal       = {Mathematical Systems Theory},
+  number        = 2,
+  volume        = 2,
+  pages         = {127-145},
+  year          = 1968
 }
 
 @article{Paakkiagsurvey,
- author = {Paakki, Jukka},
- title = {Attribute Grammar Paradigms -- a High-level Methodology in Language Implementation},
- journal = {ACM Comput. Surv.},
- issue_date = {June 1995},
- volume = {27},
- number = {2},
- month = jun,
- year = {1995},
- pages = {196--255},
- publisher = {ACM},
- address = {New York, NY, USA}
+ author         = {Paakki, Jukka},
+ title          = {Attribute Grammar Paradigms: A High-level Methodology in Language Implementation},
+ journal        = CompSurv,
+ volume         = 27,
+ number         = 2,
+ month          = jun,
+ year           = 1995,
+ pages          = {196--255},
+ publisher      = ACM,
+ address        = NewYork
 } 
 
 @article{Lewis74,
-  added-at = {2009-05-10T18:36:57.000+0200},
-  author = {Lewis, P. M. and Rosenkrantz, D. J. and Stearns, R. E.},
-  biburl = {http://www.bibsonomy.org/bibtex/2c6fa9c315838ab500a4beba2f5a7b6b1/dparigot},
-  description = {Attribute Grammar},
-  interhash = {0fc5739c0cb407a583a74a859a8c6ce4},
-  intrahash = {c6fa9c315838ab500a4beba2f5a7b6b1},
-  journal = {Journal of Computer and System Sciences},
-  keywords = {divers.lang},
-  month = {December},
-  number = 3,
-  pages = {279--307},
-  timestamp = {2009-05-10T18:36:57.000+0200},
-  title = {Attributed Translations},
-  volume = 9,
-  year = 1974
+  author        = {Lewis, P. M. and
+                   Rosenkrantz, D. J. and
+                   Stearns, R. E.},
+  title         = {Attributed Translations},
+  journal       = JCSS,
+  number        = 3,
+  volume        = 9,
+  pages         = {279--307},
+  month         = dec,
+  year          = 1974,
+  keywords      = {divers.lang},
+  description   = {Attribute Grammar}
 }
 
 @incollection{forwarding,
-year={2002},
-booktitle={Compiler Construction},
-volume={2304},
-series={Lecture Notes in Computer Science},
-title={Forwarding in Attribute Grammars for Modular Language Design},
-publisher={Springer Berlin Heidelberg},
-author={Van Wyk, Eric and De Moor, Oege and Backhouse, Kevin and Kwiatkowski, Paul},
-pages={128-142},
-language={English}
+  author        = {Van Wyk, Eric and
+                   De Moor, Oege and
+                   Backhouse, Kevin and
+                   Kwiatkowski, Paul},
+  title         = {Forwarding in Attribute Grammars for Modular Language Design},
+  booktitle     = CC,
+  year          = 2002,
+  publisher     = LNCS # "2304",
+  pages         = {128--142}
 }
 
 @article{hedin2000reference,
-  title={Reference attributed grammars},
-  author={Hedin, G{\"o}rel},
-  journal={Informatica (Slovenia)},
-  volume={24},
-  number={3},
-  pages={301--317},
-  year={2000},
-  publisher={Slovenian Society Informatika}
+  author        = {Hedin, G{\"o}rel},
+  title         = {Reference attributed grammars},
+  journal       = {Informatica (Slovenia)},
+  volume        = 24,
+  number        = 3,
+  pages         = {301--317},
+  year          = 2000,
+  publisher     = {Slovenian Society Informatika}
 }
 
 @inproceedings{hoattributes,
- author = {Vogt, H. H. and Swierstra, S. D. and Kuiper, M. F.},
- title = {Higher Order Attribute Grammars},
- booktitle = {Proceedings of the ACM SIGPLAN 1989 Conference on Programming Language Design and Implementation},
- series = {PLDI '89},
- year = {1989},
- pages = {131--145},
- numpages = {15},
- publisher = {ACM},
- address = {New York, NY, USA}
+  author        = {Vogt, H. H. and
+                   Swierstra, S. D. and
+                    Kuiper, M. F.},
+  title         = {Higher Order Attribute Grammars},
+  booktitle     = PLDI,
+  year          = 1989,
+  pages         = {131--145},
+  numpages      = 15,
+  publisher     = ACM,
+  address       = NewYork
 } 
 
 @inproceedings{jastadd,
- author = {Hedin, G\"{o}rel},
- title = {An Introductory Tutorial on {JastAdd} Attribute Grammars},
- booktitle = {Proceedings of the 3rd International Summer School Conference on Generative and Transformational Techniques in Software Engineering III},
- series = {GTTSE'09},
- year = {2011},
- location = {Braga, Portugal},
- pages = {166--200},
- numpages = {35},
- publisher = {Springer-Verlag},
- address = {Berlin, Heidelberg}
+  author        = {Hedin, G\"{o}rel},
+  title         = {An Introductory Tutorial on {JastAdd} Attribute Grammars},
+  booktitle     = GTTSE,
+  year          = 2011,
+  location      = Braga,
+  pages         = {166--200},
+  numpages      = 35,
+  publisher     = LNCS # "6491"
 } 
 
 @article{VanWyk201039,
-title = "Silver: An extensible attribute grammar system ",
-journal = "Science of Computer Programming ",
-volume = "75",
-number = "1–2",
-pages = "39 - 54",
-year = "2010",
-author = "Eric Van Wyk and Derek Bodin and Jimin Gao and Lijesh Krishnan"
+  author        = {Van Wyk, Eric and
+                   Bodin, Derek and
+                   Gao, Jimin and
+                   Krishnan, Lijesh},
+  title         = {Silver: {An} extensible attribute grammar system},
+  journal       = SCP,
+  volume        = 75,
+  number        = {1–2},
+  pages         = {39--54},
+  year          = 2010,
 }
 
 @inproceedings{vanwyk07ecoop, 
-author = "Van Wyk, Eric and Krishnan, Lijesh and Schwerdfeger, August and Bodin, Derek", 
-title = "Attribute Grammar-based Language Extensions for {Java}", 
-booktitle = "European Conference on Object Oriented Programming (ECOOP)",
-series = "Lecture Notes in Computer Science", publisher = "Springer Verlag",
- year = 2007, 
- volume = 4609 }
+  author        = {Van Wyk, Eric and
+                   Krishnan, Lijesh and
+                   Schwerdfeger, August and
+                   Bodin, Derek},
+  title         = {Attribute Grammar-based Language Extensions for {Java}},
+  booktitle     = ECOOP,
+  publisher     = LNCS # "4609",
+  year          = 2007
+}
  
  @inproceedings{uuagc,
-   author    = {S. Doaitse Swierstra and
-                Pablo R. Azero Alcocer and
-                Jo{\~a}o Saraiva},
-   title     = {Designing and Implementing Combinator Languages},
-   booktitle = {Advanced Functional Programming},
-   year      = {1998},
-   pages     = {150-206},
-   ee        = {http://dx.doi.org/10.1007/10704973_4},
-   bibsource = {DBLP, http://dblp.uni-trier.de}
+   author       = {Swierstra, S. Doaitse and
+                   Azero Alcocer, Pablo R. and
+                   Saraiva, Jo{\~a}o},
+   title        = {Designing and Implementing Combinator Languages},
+   booktitle    = {Advanced Functional Programming},
+   year         = 1998,
+   pages        = {150-206},
+   ee           = {http://dx.doi.org/10.1007/10704973_4},
+   bibsource    = {DBLP, http://dblp.uni-trier.de}
  }
  
- @ARTICLE{Moor00first-classattribute,
-     author = {Oege {De Moor} and Kevin Backhouse and S. Doaitse Swierstra},
-     title = {First-class Attribute Grammars},
-     journal = {Informatica},
-     year = {2000},
-     volume = {24},
-     pages = {2000}
- }
+@article{Moor00first-classattribute,
+  author        = {{De Moor}, Oege and
+                   Backhouse, Kevin and
+                   Swierstra, S. Doaitse},
+  title         = {First-class Attribute Grammars},
+  journal       = {Informatica},
+  year          = 2000,
+  volume        = 24,
+}
  
- @article{Sloane20131752,
- title = "A pure embedding of attribute grammars ",
- journal = "Science of Computer Programming ",
- volume = "78",
- number = "10",
- pages = "1752 - 1769",
- year = "2013",
- author = "Anthony M. Sloane and Lennart C.L. Kats and Eelco Visser"
- }
+@article{Sloane20131752,
+  author        = {Sloane, Anthony M. and
+                   Kats, Lennart C.L. and
+                   Visser, Eelco},
+  title         = {A pure embedding of attribute grammars},
+  journal       = SCP,
+  volume        = 78,
+  number        = 10,
+  pages         = {1752--1769},
+  year          = 2013,
+}
 
- @inproceedings{citeulike:258332,
-     author = {Johnsson, Thomas},
-     booktitle = {Functional Programming Languages and Computer Architecture},
-     pages = {154--173},
-     title = {{Attribute grammars as a functional programming paradigm}},
-     year = {1987}
- }
+@inproceedings{citeulike:258332,
+  author        = {Johnsson, Thomas},
+  title         = {Attribute grammars as a functional programming paradigm},
+  booktitle     = FPCA,
+  pages         = {154--173},
+  year          = 1987
+}
 
- @incollection{integagfunc,
- year={2012},
- booktitle={Software Language Engineering},
- volume={6940},
- series={Lecture Notes in Computer Science},
- title={Integrating Attribute Grammar and Functional Programming Language Features},
- publisher={Springer Berlin Heidelberg},
- author={Kaminski, Ted and {Van Wyk}, Eric},
- pages={263-282}
- }
+@incollection{integagfunc,
+  author        = {Kaminski, Ted and {Van Wyk}, Eric},
+  title         = {Integrating Attribute Grammar and Functional Programming Language Features},
+  booktitle     = SLE,
+  year          = 2012,
+  pages         = {263-282},
+  publisher     = LNCS # "6940",
+}
 
 @techreport{duris96agfolds,
     hal_id = {inria-00073741},
