@@ -39,6 +39,8 @@ Conferences:
 @string{ECOOP   = ProcOf # "European Conference on Object-Oriented Programming"}
 @string{CC      = ProcOf # "Conference on Compiler Construction"}
 @string{SLE     = ProcOf # "Conference on Software Language Engineering"}
+@string{MFPS    = ProcOf # "Conference on Mathematical Foundations of Programming Semantics"}
+@string{WGT     = ProcOf # "Workshop on Generative Technologies"}
 
 Publishers:
 
@@ -56,6 +58,7 @@ Publishers:
 @string{AarhusUniversity          =  "University of Aarhus"}
 
 @string{LNCS                      =  "Springer LNCS "}
+@string{ENTCS                     =  "Elsevier ENTCS "}
 
 Countries:
 
@@ -181,11 +184,14 @@ Papers:
 }
 
 @article{chirica79knuthian,
-  author = {Laurian M. Chirica and David F. Martin},
-  title = {An Order-Algebraic Definition of {Knuthian} Semantics},
-  journal = {Mathematical Systems Theory},
-  volume = {13},
-  year = {1979}
+  author        = {Chirica, Laurian M. and
+                   Martin, David F.},
+  title         = {An Order-Algebraic Definition of {Knuthian}
+                  Semantics},
+  journal       = {Mathematical Systems Theory},
+  year          = 1979,
+  volume        = 13,
+  pages         = {1--27}
 }
 
 @inproceedings{fegaras96revisiting,
@@ -1127,7 +1133,7 @@ Papers:
   title         = {Feature-Oriented Programming with Object Algebras},
   booktitle     = ECOOP,
   year          = 2013,
-  publisher     = Springer,
+  publisher     = LNCS # {7920},
 }
 
 @inproceedings{axelsson12generic,
@@ -1158,7 +1164,7 @@ Papers:
   year          = {2012},
   booktitle     = ECOOP,
   pages         = {2--27},
-  publisher     = Springer,
+  publisher     = LNCS # {7313},
 }
 
 @article{knuthags,
@@ -1236,18 +1242,19 @@ Papers:
 } 
 
 @article{circularrag,
-author = {Magnusson, Eva and Hedin, G\"{o}rel},
-doi = {10.1016/j.scico.2005.06.005},
-issn = {01676423},
-journal = {Science of Computer Programming},
-keywords = {attribute grammars,circular attribute evaluation,demand-driven evaluation,fixed-point evaluation,grammar,reference attributes},
-month = aug,
-number = {1},
-pages = {21--37},
-title = {{Circular reference attributed grammars — their evaluation and applications}},
-url = {http://linkinghub.elsevier.com/retrieve/pii/S0167642307000767},
-volume = {68},
-year = {2007}
+  author        = {Magnusson, Eva and
+                   Hedin, G\"{o}rel},
+  title         = {Circular reference attributed grammars:
+                   Their evaluation and applications},
+  journal       = SCP,
+  year          = 2007,
+  volume        = 68,
+  number        = 1,
+  pages         = {21--37},
+  month         = aug,
+  keywords      = {attribute grammars,circular attribute
+                  evaluation,demand-driven evaluation,fixed-point
+                  evaluation,grammar,reference attributes},
 }
 
 
@@ -1337,93 +1344,93 @@ year = {2007}
   publisher     = LNCS # "6940",
 }
 
-@techreport{duris96agfolds,
-    hal_id = {inria-00073741},
-    url = {http://hal.inria.fr/inria-00073741},
-    title = {Attribute Grammars and Folds : Generic Control Operators},
-    author = {Duris, {\'E}tienne and Parigot, Didier and Roussel, Gilles and Jourdan, Martin},
-    affiliation = {OSCAR - INRIA Rocquencourt},
-    type = {Rapport de recherche},
-    institution = {INRIA},
-    number = {RR-2957},
-    note = {Projet OSCAR},
-    year = {1996},
-    pdf = {http://hal.inria.fr/inria-00073741/PDF/RR-2957.pdf},
+@TechReport{duris96agfolds,
+  author        = {Duris, {\'E}tienne and
+                   Parigot, Didier and
+                   Roussel, Gilles and
+                   Jourdan, Martin},
+  title         = {Attribute Grammars and Folds:
+                   Generic Control Operators},
+  institution   = {INRIA},
+  year          = 1996,
+  type          = {Rapport de recherche},
+  number        = {RR-2957},
 }
 
 @article{Bochmann1976,
-author = {Bochmann, Gregor V.},
-journal = {Communications of the ACM},
-number = {2},
-pages = {55--62},
-title = {{Semantic evaluation from left to right}},
-volume = {19},
-year = {1976}
+  author        = {Bochmann, Gregor V.},
+  title         = {Semantic Evaluation from Left to Right},
+  journal       = CACM,
+  year          = 1976,
+  volume        = 19,
+  number        = 2,
+  pages         = {55--62}
 }
 
-
- 
 @inproceedings{mfpsvisitors,
-  author =	 {Peter Buchlovsky and Hayo Thielecke},
-  title =	 {A Type-theoretic Reconstruction of the Visitor
+  author        = {Buchlovsky, Peter and Thielecke, Hayo},
+  title         = {A Type-theoretic Reconstruction of the Visitor
                   Pattern},
-  booktitle =	 {21st Conference on Mathematical Foundations of
-                  Programming Semantics (MFPS XXI)},
-  series =	 {Electronic Notes in Theoretical Computer Science
-                  (ENTCS)},
-                  volume = 155,
-                  pages = {309--329},
-                  publisher = {Elsevier},
-  year =	 2006,
+  booktitle     = MFPS,
+  year          = 2006,
+  pages         = {309--329},
+  publisher     = ENTCS # {155}
 }
 
-@article{Middelkoop201147,
-title = "Visitor-based Attribute Grammars with Side Effect ",
-journal = "Electronic Notes in Theoretical Computer Science ",
-volume = "264",
-number = "5",
-pages = "47 - 69",
-year = "2011",
-note = "Proceedings of the Second Workshop on Generative Technologies (WGT) 2010 ",
-author = "Arie Middelkoop and Atze Dijkstra and S. Doaitse Swierstra"
+@inproceedings{Middelkoop201147,
+  author        = {Middelkoop, Arie and
+                   Dijkstra, Atze and
+                   Swierstra, S. Doaitse},
+  title         = {Visitor-based Attribute Grammars with Side
+                   Effect},
+  booktitle     = WGT,
+  year          = 2011,
+  publisher     = ENTCS # {264(5)},
+  pages         = {47 - 69},
 }
 
 
 
 @inproceedings{Gibbons:2006:DPH:1159861.1159863,
- author = {Gibbons, Jeremy},
- title = {Design Patterns As Higher-order Datatype-generic Programs},
- booktitle = {Proceedings of the 2006 ACM SIGPLAN Workshop on Generic Programming},
- year = {2006},
- pages = {1--12},
- publisher = {ACM},
- address = {New York, NY, USA}
+  author        = {Gibbons, Jeremy},
+  title         = {Design Patterns As Higher-order
+                   Datatype-generic Programs},
+  booktitle     = WGP,
+  year          = 2006,
+  pages         = {1--12},
+  address       = NewYork,
+  publisher     = ACM
 } 
  
- @INPROCEEDINGS{Oliveira09modularvisitor,
-     author = {Oliveira, Bruno C. d. S.},
-     title = {Modular visitor components: A practical solution to the expression families problem},
-     booktitle = {In ECOOP ’09},
-     year = {2009}
- }
+@inproceedings{Oliveira09modularvisitor,
+  author        = {Oliveira, Bruno C. d. S.},
+  title         = {Modular visitor components: A practical
+                  solution to the expression families problem},
+  booktitle     = ECOOP,
+  year          = 2009,
+  publisher     = LNCS # {5653}
+}
 
 @book{books/sp/DeransartJL88,
-  author = {Deransart, Pierre and Jourdan, Martin and Lorho, Bernard},
-  publisher = {Springer},
-  series = {Lecture Notes in Computer Science},
-  title = {Attribute Grammars: Definitions, Systems, and Bibliography.},
-  volume = 323,
-  year = 1988
+  author        = {Deransart, Pierre and
+                   Jourdan, Martin and
+                   Lorho, Bernard},
+  title         = {Attribute Grammars: Definitions, Systems, and
+                  Bibliography},
+  publisher     = LNCS # {323},
+  year          = 1988,
 }
 
 @inproceedings{Viera:2009:AGF:1596550.1596586,
- author = {Viera, Marcos and Swierstra, S. Doaitse and Swierstra, Wouter},
- title = {Attribute Grammars Fly First-class: How to Do Aspect Oriented Programming in {Haskell}},
- booktitle = {Proceedings of the 14th ACM SIGPLAN International Conference on Functional Programming},
- series = {ICFP '09},
- year = {2009},
- pages = {245--256},
- numpages = {12},
- publisher = {ACM},
- address = {New York, NY, USA}
+  author        = {Viera, Marcos and
+                   Swierstra, S. Doaitse and
+                   Swierstra, Wouter},
+  title         = {Attribute Grammars Fly First-class:
+                   How to Do Aspect Oriented Programming in {Haskell}},
+  booktitle     = ICFP,
+  year          = 2009,
+  pages         = {245--256},
+  address       = NewYork,
+  publisher     = ACM,
+  numpages      = 12
 } 
