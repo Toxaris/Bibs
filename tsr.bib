@@ -45,6 +45,11 @@ Conferences:
 @string{SLE     = ProcOf # "Conference on Software Language Engineering"}
 @string{MFPS    = ProcOf # "Conference on Mathematical Foundations of Programming Semantics"}
 @string{WGT     = ProcOf # "Workshop on Generative Technologies"}
+@string{LDTA    = ProcOf # "Workshop on Language Descriptions, Tools, and Applications"}
+@string{AOSD    = ProcOf # "Conference on Aspect-Oriented Software Development"}
+@string{OOPSLA  = ProcOf # "Conference on Object-Oriented Programming, Systems, Languages, and Applications"}
+@string{FOSD    = ProcOf # "Workshop on Feature-Oriented Software Development"}
+@string{VAMOS   = ProcOf # "Workshop on Variability Modelling of Software-intensive Systems"}
 
 Publishers:
 
@@ -66,8 +71,10 @@ Publishers:
 @string{LNCS                      =  "Springer LNCS "}
 @string{ENTCS                     =  "Elsevier ENTCS "}
 
-@string{LNCS                      =  "Springer LNCS "}
-@string{ENTCS                     =  "Elsevier ENTCS "}
+Schools:
+
+@string{uni-marburg               =  "University of Marburg"}
+
 
 Countries:
 
@@ -1672,4 +1679,187 @@ The above is a Master's thesis.
   address       = NewYork,
   publisher     = ACM,
   numpages      = 12
-} 
+}
+
+@inproceedings{erdweg12layout-sensitive,
+  author        = {Erdweg, Sebastian and
+                   Rieger, Felix and
+                   Rendel, Tillmann and
+                   Ostermann, Klaus},
+  title         = {Layout-sensitive Language Extensibility
+                   with SugarHaskell},
+  booktitle     = Haskell,
+  year          = 2012,
+  pages         = {149--160},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{erdweg12language,
+  author        = {Erdweg, Sebastian and
+                   Giarrusso, Paolo G. and
+                   Rendel, Tillmann},
+  title         = {Language Composition Untangled},
+  booktitle     = LDTA,
+  year          = 2012,
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{erdweg11growing,
+  author        = {Erdweg, Sebastian and
+                   Kats, Lennart C. L. and
+                   Rendel, Tillmann and
+                   K{\"a}stner, Christian and
+                   Ostermann, Klaus and
+                   Visser, Eelco},
+  title         = {Growing a Language Environment
+                   with Editor Libraries},
+  booktitle     = GPCE,
+  year          = 2011,
+  pages         = {167--176},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{erdweg11sugarj,
+  author        = {Erdweg, Sebastian and
+                   Rendel, Tillmann and
+                   K{\"a}stner, Christian and
+                   Ostermann, Klaus},
+  title         = {SugarJ: Library-based Syntactic Language
+                   Extensibility},
+  booktitle     = OOPSLA,
+  year          = 2011,
+  pages         = {391--406},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{kaestner11variability-aware,
+  author        = {K{\"a}stner, Christian and
+                   Giarrusso, Paolo G. and
+                   Rendel, Tillmann and
+                   Erdweg, Sebastian and
+                   Ostermann, Klaus and
+                   Berger, Thorsten},
+  title         = {Variability-Aware Parsing in the Presence of
+                   Lexical Macros and Conditional Compilation},
+  booktitle     = OOPSLA,
+  year          = 2011,
+  pages         = {805--824},
+  address       = NewYork,
+  publisher     = ACM
+}
+
+@phdthesis{erdweg13thesis,
+  author        = {Erdweg, Sebastian},
+  title         = {Extensible Languages for Flexible and
+                   Principled Domain Abstraction},
+  school        = uni-marburg,
+  year          = 2013
+}
+
+@misc{rendel14object,
+  author        = {Rendel, Tillmann and
+                   Brachth{\"a}user, Jonathan and
+                   Ostermann, Klaus},
+  title         = {From Object Algebras to Attributes Grammars},
+  howpublished  = {Submitted to OOPSLA},
+  year          = 2014
+}
+
+@inproceedings{rendel10invertible,
+  author        = {Rendel, Tillmann and
+                   Ostermann, Klaus},
+  title         = {Invertible Syntax Descriptions:
+                   Unifying Parsing and Pretty Printing},
+  booktitle     = Haskell,
+  location      = Baltimore,
+  year          = 2010,
+  pages         = {1--12},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{cai14theory,
+  author        = {Cai, Yufai and
+                   Giarrusso, Paolo G. and
+                   Rendel, Tillmann and
+                   Ostermann, Klaus},
+  title         = {A Theory of Changes
+                   for Higher-Order Languages:
+                   Incrementalizing $\lambda$-Calculi
+                   by Static Differentiation},
+  booktitle     = PLDI,
+  publisher     = ACM,
+  address       = NewYork
+}
+
+@inproceedings{giarrusso13reify,
+  author        = {Giarrusso, Paolo G. and
+                   Ostermann, Klaus and
+                   Eichberg, Michael and
+                   Mitschke, Ralf and
+                   Rendel, Tillmann and
+                   K{\"a}stner, Christian},
+  title         = {Reify your Collection Queries
+                   for Modularity and Speed!},
+  booktitle     = AOSD,
+  year          = 2013,
+  pages         = {1--12},
+  organization  = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{ostermann11revisiting,
+  author        = {Ostermann, Klaus and
+                   Giarrusso, Paolo. G and
+                   K{\"a}stner, Christian and
+                   Rendel, Tillmann},
+  title         = {Revisiting Information Hiding:
+                   Reflections on Classical and Nonclassical Modularity},
+  booktitle     = ECOOP,
+  publisher     = LNCS # {6813},
+  year          = 2011,
+  pages         = {155--178}
+}
+
+@inproceedings{erdweg13layout-sensitive,
+  author        = {Erdweg, Sebastian and
+                   Rendel, Tillmann and
+                   K{\"a}stner, Christian and
+                   Ostermann, Klaus},
+  title         = {Layout-sensitive Generalized Parsing},
+  booktitle     = SLE # " 2012",
+  publisher     = LNCS # {7745},
+  year          = 2013,
+  pages         = {244--263}
+}
+
+@inproceedings{kaestner12toward,
+  author        = {K{\"a}stner, Christian and
+                   von Rhein, Alexander and
+                   Erdweg, Sebastian and
+                   Pusch, Jonas and
+                   Apel, Sven and
+                   Rendel, Tillmann and
+                   Ostermann, Klaus},
+  title         = {Toward Variability-aware Testing},
+  booktitle     = FOSD,
+  year          = 2012,
+  pages         = {1--8},
+  organization  = ACM,
+  address       = NewYork,
+}
+
+@inproceedings{erwig13adding,
+  author        = {Erwig, Martin and Ostermann, Klaus and Rendel,
+                   Tillmann and Walkingshaw, Eric},
+  title         = {Adding Configuration to the Choice Calculus},
+  booktitle     = VAMOS,
+  year          = 2013,
+  pages         = 13,
+  organization  = ACM,
+  address       = NewYork,
+}
