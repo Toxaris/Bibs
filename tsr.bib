@@ -10,7 +10,7 @@ Journals:
 @string{JACM            =  "Journal of the ACM"}
 @string{CACM            =  "Communications of the ACM"}
 @string{MSCS            =  "Mathematical Structures in Computer Science"}
-@string{LNCS            =  "LNCS"}
+@string{JCSS            =  "Journal of Computer and System Sciences"}
 
 Conferences:
 
@@ -18,6 +18,7 @@ Conferences:
 
 @string{ICFP    = ProcOf # "International Conference on Functional Programming"}
 @string{GPCE    = ProcOf # "Conference on Generative Programming and Component Engineering"}
+@string{GTTSE   = ProcOf # "Summer School Conference on Generative and Transformational Techniques in Software Engineering"}
 @string{ESOP    = ProcOf # "European Symposium on Programming"}
 @string{MPC     = ProcOf # "Conference on Mathematics of Program Construction"}
 @string{IFL-S   = ProcOf # "Symposium on Implementation and Application of Functional Languages"}
@@ -35,11 +36,15 @@ Conferences:
 @string{PLDI    = ProcOf # "Conference on Programming Language Design and Implementation"}
 @string{PLILPS  = ProcOf # "Symposium on Programming Languages: Implementations, Logics and Programs"}
 @string{ASIAN   = ProcOf # "Asian Computing Science Conference"}
-@string{FDPC    = ProcOf # "IFIP WC on Formal Descriptions of Programming Concepts"}
+@string{FDPC    = ProcOf # "IFIP Working Conference on Formal Descriptions of Programming Concepts"}
 @string{SAIG    = ProcOf # "Workshop on Semantics, Applications, and Implementation of Program Generation"}
 @string{Haskell = ProcOf # "Haskell Symposium"}
 @string{PLILP   = ProcOf # "Programming Language Implementation and Logic Programming"}
-@string{PLILP   = ProcOf # "PLILP"}
+@string{ECOOP   = ProcOf # "European Conference on Object-Oriented Programming"}
+@string{CC      = ProcOf # "Conference on Compiler Construction"}
+@string{SLE     = ProcOf # "Conference on Software Language Engineering"}
+@string{MFPS    = ProcOf # "Conference on Mathematical Foundations of Programming Semantics"}
+@string{WGT     = ProcOf # "Workshop on Generative Technologies"}
 
 Publishers:
 
@@ -58,6 +63,9 @@ Publishers:
 @string{MelbourneUniversity       =  "University of Melbourne"}
 @string{GlasgowUniversity         =  "Glasgow University"}
 
+@string{LNCS                      =  "Springer LNCS "}
+@string{ENTCS                     =  "Elsevier ENTCS "}
+
 Countries:
 
 @string{EE = ", Estonia"}
@@ -66,6 +74,7 @@ Countries:
 @string{IE = ", Ireland"}
 @string{JP = ", Japan"}
 @string{NL = ", The Netherlands"}
+@string{PT = ", Portugal"}
 @string{SE = ", Sweden"}
 @string{US = ", USA"}
 @string{AU = ", Australia"}
@@ -132,6 +141,7 @@ Towns:
 @string{Baltimore           = "Baltimore"               #  US-MD}
 @string{Berlin              = "Berlin"                  #  DE}
 @string{Boston              = "Boston"                  #  US-MA}
+@string{Braga               = "Braga"                   #  PT}
 @string{Cambdrige           = "Cambridge"               #  US-MA}
 @string{Charleston          = "Charleston"              #  US-SC}
 @string{Deventer            = "Deventer"                #  NL}
@@ -147,7 +157,10 @@ Towns:
 @string{Melbourne           = "Melbourne"               #  AU}
 @string{Nashville           = "Nashville"               #  US-TN}
 @string{NewHaven            = "New Haven"               #  US-CT}
-@string{NewYork             = "New York"                #  US-NY}
+
+% @string{NewYork             = "New York"                #  US-NY}
+@string{NewYork               = ""}
+
 @string{Nijmegen            = "Nijmegen"                #  NL}
 @string{Orlando             = "Orlando"                 #  US-FL}
 @string{Philadelphia        = "Philadelphia"            #  US-PA}
@@ -183,6 +196,17 @@ Papers:
   volume        =  {39},
   year          =  {1985},
   pages         =  {135--154},
+}
+
+@article{chirica79knuthian,
+  author        = {Chirica, Laurian M. and
+                   Martin, David F.},
+  title         = {An Order-Algebraic Definition of {Knuthian}
+                  Semantics},
+  journal       = {Mathematical Systems Theory},
+  year          = 1979,
+  volume        = 13,
+  pages         = {1--27}
 }
 
 @inproceedings{fegaras96revisiting,
@@ -359,7 +383,7 @@ Papers:
   booktitle     = {APLAS'07, extended version to appear in Journal of Functional  Programming},
   year          = {2007},
   pages         = {222-238},
-  publisher     = {Springer LNCS 4807},
+  publisher     = LNCS # "4807",
 }
 
 @article{carette09finally,
@@ -1326,3 +1350,327 @@ The above is a Master's thesis.
   volume        = {844},
   year          = {1994}
 }
+
+@article{keshav07read,
+  author        = {Keshav, S.},
+  title         = {How to Read a Paper},
+  journal       = {SIGCOMM Comput. Commun. Rev.},
+  volume        = {37},
+  number        = {3},
+  month         = jul,
+  year          = {2007},
+  pages         = {83--84},
+  publisher     = ACM,
+  address       = NewYork,
+  keywords      = {hints, paper, reading},
+}
+
+@inproceedings{oliveira13feature,
+  author        = {Oliveira, Bruno C. d. S. and
+                   van der Storm, Tijs and
+                   Loh, Alex and
+                   Cook, William R.},
+  title         = {Feature-Oriented Programming with Object Algebras},
+  booktitle     = ECOOP,
+  year          = 2013,
+  publisher     = LNCS # {7920},
+}
+
+@inproceedings{axelsson12generic,
+  author        = {Axelsson, Emil},
+  title         = {A Generic Abstract Syntax Model for Embedded Languages},
+  booktitle     = ICFP,
+  year          = {2012},
+  pages         = {323--334},
+  publisher     = ACM,
+  address       = NewYork,
+}
+
+@incollection{meijer91functional,
+  author        = {Meijer, Erik and
+                   Fokkinga, Maarten and
+                   Paterson, Ross},
+  year          = {1991},
+  booktitle     = FPCA,
+  title         = {Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire},
+  publisher     = Springer,
+  pages         = {124--144}
+}
+
+@inproceedings{oliveira12extensibility,
+  author        = {Oliveira, Bruno C. d. S. and
+                   Cook, William R.},
+  title         = {Extensibility for the Masses: Practical Extensibility with Object Algebras},
+  year          = {2012},
+  booktitle     = ECOOP,
+  pages         = {2--27},
+  publisher     = LNCS # {7313},
+}
+
+@article{knuthags,
+  author        = {Knuth, Donald E.},
+  title         = {Semantics of Context-Free Languages},
+  journal       = {Mathematical Systems Theory},
+  number        = 2,
+  volume        = 2,
+  pages         = {127-145},
+  year          = 1968
+}
+
+@article{Paakkiagsurvey,
+ author         = {Paakki, Jukka},
+ title          = {Attribute Grammar Paradigms: A High-level Methodology in Language Implementation},
+ journal        = CompSurv,
+ volume         = 27,
+ number         = 2,
+ month          = jun,
+ year           = 1995,
+ pages          = {196--255},
+ publisher      = ACM,
+ address        = NewYork
+} 
+
+@article{Lewis74,
+  author        = {Lewis, P. M. and
+                   Rosenkrantz, D. J. and
+                   Stearns, R. E.},
+  title         = {Attributed Translations},
+  journal       = JCSS,
+  number        = 3,
+  volume        = 9,
+  pages         = {279--307},
+  month         = dec,
+  year          = 1974,
+  keywords      = {divers.lang},
+  description   = {Attribute Grammar}
+}
+
+@incollection{forwarding,
+  author        = {Van Wyk, Eric and
+                   De Moor, Oege and
+                   Backhouse, Kevin and
+                   Kwiatkowski, Paul},
+  title         = {Forwarding in Attribute Grammars for Modular Language Design},
+  booktitle     = CC,
+  year          = 2002,
+  publisher     = LNCS # "2304",
+  pages         = {128--142}
+}
+
+@article{hedin2000reference,
+  author        = {Hedin, G{\"o}rel},
+  title         = {Reference attributed grammars},
+  journal       = {Informatica (Slovenia)},
+  volume        = 24,
+  number        = 3,
+  pages         = {301--317},
+  year          = 2000,
+  publisher     = {Slovenian Society Informatika}
+}
+
+@inproceedings{hoattributes,
+  author        = {Vogt, H. H. and
+                   Swierstra, S. D. and
+                    Kuiper, M. F.},
+  title         = {Higher Order Attribute Grammars},
+  booktitle     = PLDI,
+  year          = 1989,
+  pages         = {131--145},
+  numpages      = 15,
+  publisher     = ACM,
+  address       = NewYork
+} 
+
+@article{circularrag,
+  author        = {Magnusson, Eva and
+                   Hedin, G\"{o}rel},
+  title         = {Circular reference attributed grammars:
+                   Their evaluation and applications},
+  journal       = SCP,
+  year          = 2007,
+  volume        = 68,
+  number        = 1,
+  pages         = {21--37},
+  month         = aug,
+  keywords      = {attribute grammars,circular attribute
+                  evaluation,demand-driven evaluation,fixed-point
+                  evaluation,grammar,reference attributes},
+}
+
+
+@inproceedings{jastadd,
+  author        = {Hedin, G\"{o}rel},
+  title         = {An Introductory Tutorial on {JastAdd} Attribute Grammars},
+  booktitle     = GTTSE,
+  year          = 2011,
+  location      = Braga,
+  pages         = {166--200},
+  numpages      = 35,
+  publisher     = LNCS # "6491"
+} 
+
+@article{VanWyk201039,
+  author        = {Van Wyk, Eric and
+                   Bodin, Derek and
+                   Gao, Jimin and
+                   Krishnan, Lijesh},
+  title         = {Silver: {An} extensible attribute grammar system},
+  journal       = SCP,
+  volume        = 75,
+  number        = {1–2},
+  pages         = {39--54},
+  year          = 2010,
+}
+
+@inproceedings{vanwyk07ecoop, 
+  author        = {Van Wyk, Eric and
+                   Krishnan, Lijesh and
+                   Schwerdfeger, August and
+                   Bodin, Derek},
+  title         = {Attribute Grammar-based Language Extensions for {Java}},
+  booktitle     = ECOOP,
+  publisher     = LNCS # "4609",
+  year          = 2007
+}
+ 
+ @inproceedings{uuagc,
+   author       = {Swierstra, S. Doaitse and
+                   Azero Alcocer, Pablo R. and
+                   Saraiva, Jo{\~a}o},
+   title        = {Designing and Implementing Combinator Languages},
+   booktitle    = {Advanced Functional Programming},
+   year         = 1998,
+   pages        = {150-206},
+   ee           = {http://dx.doi.org/10.1007/10704973_4},
+   bibsource    = {DBLP, http://dblp.uni-trier.de}
+ }
+ 
+@article{Moor00first-classattribute,
+  author        = {{De Moor}, Oege and
+                   Backhouse, Kevin and
+                   Swierstra, S. Doaitse},
+  title         = {First-class Attribute Grammars},
+  journal       = {Informatica},
+  year          = 2000,
+  volume        = 24,
+}
+ 
+@article{Sloane20131752,
+  author        = {Sloane, Anthony M. and
+                   Kats, Lennart C.L. and
+                   Visser, Eelco},
+  title         = {A pure embedding of attribute grammars},
+  journal       = SCP,
+  volume        = 78,
+  number        = 10,
+  pages         = {1752--1769},
+  year          = 2013,
+}
+
+@inproceedings{citeulike:258332,
+  author        = {Johnsson, Thomas},
+  title         = {Attribute grammars as a functional programming paradigm},
+  booktitle     = FPCA,
+  pages         = {154--173},
+  year          = 1987
+}
+
+@incollection{integagfunc,
+  author        = {Kaminski, Ted and {Van Wyk}, Eric},
+  title         = {Integrating Attribute Grammar and Functional Programming Language Features},
+  booktitle     = SLE,
+  year          = 2012,
+  pages         = {263-282},
+  publisher     = LNCS # "6940",
+}
+
+@TechReport{duris96agfolds,
+  author        = {Duris, {\'E}tienne and
+                   Parigot, Didier and
+                   Roussel, Gilles and
+                   Jourdan, Martin},
+  title         = {Attribute Grammars and Folds:
+                   Generic Control Operators},
+  institution   = {INRIA},
+  year          = 1996,
+  type          = {Rapport de recherche},
+  number        = {RR-2957},
+}
+
+@article{Bochmann1976,
+  author        = {Bochmann, Gregor V.},
+  title         = {Semantic Evaluation from Left to Right},
+  journal       = CACM,
+  year          = 1976,
+  volume        = 19,
+  number        = 2,
+  pages         = {55--62}
+}
+
+@inproceedings{mfpsvisitors,
+  author        = {Buchlovsky, Peter and Thielecke, Hayo},
+  title         = {A Type-theoretic Reconstruction of the Visitor
+                  Pattern},
+  booktitle     = MFPS,
+  year          = 2006,
+  pages         = {309--329},
+  publisher     = ENTCS # {155}
+}
+
+@inproceedings{Middelkoop201147,
+  author        = {Middelkoop, Arie and
+                   Dijkstra, Atze and
+                   Swierstra, S. Doaitse},
+  title         = {Visitor-based Attribute Grammars with Side
+                   Effect},
+  booktitle     = WGT,
+  year          = 2011,
+  publisher     = ENTCS # {264(5)},
+  pages         = {47 - 69},
+}
+
+
+
+@inproceedings{Gibbons:2006:DPH:1159861.1159863,
+  author        = {Gibbons, Jeremy},
+  title         = {Design Patterns As Higher-order
+                   Datatype-generic Programs},
+  booktitle     = WGP,
+  year          = 2006,
+  pages         = {1--12},
+  address       = NewYork,
+  publisher     = ACM
+} 
+ 
+@inproceedings{Oliveira09modularvisitor,
+  author        = {Oliveira, Bruno C. d. S.},
+  title         = {Modular visitor components: A practical
+                  solution to the expression families problem},
+  booktitle     = ECOOP,
+  year          = 2009,
+  publisher     = LNCS # {5653}
+}
+
+@book{books/sp/DeransartJL88,
+  author        = {Deransart, Pierre and
+                   Jourdan, Martin and
+                   Lorho, Bernard},
+  title         = {Attribute Grammars: Definitions, Systems, and
+                  Bibliography},
+  publisher     = LNCS # {323},
+  year          = 1988,
+}
+
+@inproceedings{Viera:2009:AGF:1596550.1596586,
+  author        = {Viera, Marcos and
+                   Swierstra, S. Doaitse and
+                   Swierstra, Wouter},
+  title         = {Attribute Grammars Fly First-class:
+                   How to Do Aspect Oriented Programming in {Haskell}},
+  booktitle     = ICFP,
+  year          = 2009,
+  pages         = {245--256},
+  address       = NewYork,
+  publisher     = ACM,
+  numpages      = 12
+} 
