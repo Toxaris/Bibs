@@ -1,1 +1,1 @@
-@git subtree pull --squash --prefix bib bib --message "Merge shared bibliography."
+@git subtree pull --squash --prefix bib bib master --message "Merge shared bibliography."

@@ -39,6 +39,7 @@ Conferences:
 @string{FDPC    = ProcOf # "IFIP Working Conference on Formal Descriptions of Programming Concepts"}
 @string{SAIG    = ProcOf # "Workshop on Semantics, Applications, and Implementation of Program Generation"}
 @string{Haskell = ProcOf # "Haskell Symposium"}
+@string{HaskellWorkshop = ProcOf # "Haskell Workshop"}
 @string{PLILP   = ProcOf # "Programming Language Implementation and Logic Programming"}
 @string{ECOOP   = ProcOf # "European Conference on Object-Oriented Programming"}
 @string{CC      = ProcOf # "Conference on Compiler Construction"}
@@ -47,7 +48,9 @@ Conferences:
 @string{WGT     = ProcOf # "Workshop on Generative Technologies"}
 @string{LDTA    = ProcOf # "Workshop on Language Descriptions, Tools, and Applications"}
 @string{AOSD    = ProcOf # "Conference on Aspect-Oriented Software Development"}
-@string{OOPSLA  = ProcOf # "Conference on Object-Oriented Programming, Systems, Languages, and Applications"}
+@string{FOOL    = ProcOf # "Workshop on Foundations of Object-Oriented Languages"}
+@string{OOPSLA  = ProcOf # "Conference on Object-Oriented Programming, Systems, Languages and Applications"}
+@string{APLAS   = ProcOf # "Asian Symposium on Programming Languages and Systems"}
 @string{FOSD    = ProcOf # "Workshop on Feature-Oriented Software Development"}
 @string{VAMOS   = ProcOf # "Workshop on Variability Modelling of Software-intensive Systems"}
 
@@ -183,6 +186,7 @@ Towns:
 @string{SanAntonio          = "San Antonio"             #  US-TX}
 @string{SanFrancisco        = "San Francisco"           #  US-CA}
 @string{Secaucus            = "Secaucus"                #  US-NJ}
+@string{SnowBird            = "Snow Bird"               #  US-UT}
 @string{StPetersburgBeach   = "St. Petersburg Beach"    #  US-FL}
 @string{Talinn              = "Tallinn"                 #  EE}
 @string{Tokyo               = "Tokyo"                   #  JP}
@@ -395,7 +399,7 @@ Papers:
                    Oleg Kiselyov and
                    {Chung-Chieh} Shan},
   title         = {Finally Tagless, Partially Evaluated},
-  booktitle     = {APLAS'07, extended version to appear in Journal of Functional  Programming},
+  booktitle     = APLAS,
   year          = {2007},
   pages         = {222-238},
   publisher     = LNCS # "4807",
@@ -478,6 +482,22 @@ Papers:
   doi           = {http://doi.acm.org/10.1145/800194.805852},
   publisher     = ACM,
   address       = NewYork
+}
+
+@article{reynolds75user,
+  author        = {Reynolds, John C.},
+  title         = {User-defined types and procedural data structures as complementary approaches to data abstraction},
+  year          = {1975},
+  institution   = {Department of Computer Science, Carnegie-Mellon University}
+}
+
+@inproceedings{cook90object,
+  author        = {Cook, William R.},
+  title         = {Object-Oriented Programming Versus ABstract Data Types},
+  year          = {1990},
+  booktitle     = ProcOf # "REX Workshop / School on the Foundations of Object-Oriented Languages",
+  publisher     = Springer,
+  pages         = {151--178}
 }
 
 @article{mccarthy60recursive,
@@ -1684,6 +1704,149 @@ The above is a Master's thesis.
   address       = NewYork,
   publisher     = ACM,
   numpages      = 12
+} 
+
+@Unpublished{wadler98expression,
+  author        = {Wadler, Philip},
+  title         = {The Expression Problem},
+  note          = {Note to Java Genericity mailing list},
+  month         = nov,
+  year          = 1998
+}
+
+@inproceedings{hinze04generics,
+  author        = {Hinze, Ralf},
+  title         = {Generics for the Masses},
+  booktitle     = ICFP,
+  year          = 2004,
+  pages         = {236--243},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = SnowBird,
+  numpages      = 8
+}
+
+@article{hinze06generics,
+  author        = {Hinze, Ralf},
+  title         = {Generics for the Masses},
+  journal       = JFP,
+  year          = 2006,
+  volume        = 16,
+  number        = {4-5},
+  pages         = {451--483},
+  month         = jul,
+  numpages      = 33,
+  publisher     = CambridgeUniversityPress,
+  address       = NewYork
+}
+
+@inproceedings{rodriguez09generic,
+  author        = {Rodriguez Yakushev, Alexey and
+                   Holdermans, Stefan and
+                   L\"{o}h, Andres and
+                   Jeuring, Johan},
+  title         = {Generic Programming with Fixed Points for
+                   Mutually Recursive Datatypes},
+  booktitle     = ICFP,
+  year          = 2009,
+  pages         = {233--244},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Edinburgh,
+  numpages      = 12
+}
+
+@inproceedings{oliveira08visitor,
+  author        = {Oliveira, Bruno C.d.S. and
+                   Wang, Meng and
+                   Gibbons, Jeremy},
+  title         = {The Visitor Pattern As a Reusable, Generic,
+                   Type-safe Component},
+  booktitle     = OOPSLA,
+  year          = 2008,
+  pages         = {439--456},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Nashville,
+  numpages      = 18,
+}
+
+@inproceedings{oliveira05typecase,
+  author        = {Oliveira, Bruno C. d. S. and
+                   Gibbons, Jeremy},
+  title         = {TypeCase:
+                   A Design Pattern for Type-indexed Functions},
+  booktitle     = HaskellWorkshop,
+  year          = 2005,
+  address       = NewYork,
+  publisher     = ACM,
+  isbn          = {1-59593-071-X},
+  location      = Tallinn,
+  numpages      = 12
+}
+
+@book{pierce02plt,
+  author        = {Pierce, Benjamin C.},
+  title         = {Types and Programming Languages},
+  publisher     = MIT,
+  year          = {2002}
+}
+
+@inproceedings{laemmel08expr,
+  author        = {L{\"a}mmel, Ralf and
+                   Rypacek, Ondrej},
+  title         = {{The Expression Lemma}},
+  booktitle     = MPC,
+  year          = 2008,
+  month         = jul,
+  publisher     = LNCS
+}
+
+@inbook{jacobs95classes,
+  author        = {Jacobs, Bart},
+  title         = {Objects and Classes, Coalgebraically},
+  publisher     = Springer,
+  year          = 1995,
+  pages         = {83--103},
+  booktitle     = {Object Orientation with Parallelism and
+                   Persistence},
+  location      = US
+}
+
+@inproceedings{rendel14oa2ag,
+  author        = {Rendel, Tillmann and
+                   Brachth{\"a}user, Jonathan and
+                   Ostermann, Klaus},
+  title         = {From Object Algebras to Attribute Grammars},
+  booktitle     = OOPSLA,
+  year          = 2014,
+  publisher     = {Conditionally accepted for presentation at
+                   OOPSLA}
+}
+
+@book{abadi96theory,
+  author        = {Abadi, Martin and
+                   Cardelli, Luca},
+  title         = {A Theory of Objects},
+  publisher     = Springer,
+  year          = 1996
+}
+
+@article{kiselyov05oohaskell,
+  author        = {Kiselyov, Oleg and
+                   Laemmel, Ralf},
+  title         = {Haskell's Overlooked Object System},
+  journal       = {CoRR},
+  year          = 2005
+}
+
+@inproceedings{odersky05independently,
+  author        = {Odersky, Martin and
+                   Zenger, Matthias},
+  title         = {Independently Extensible Solutions to the
+                   Expression Problem},
+  booktitle     = FOOL,
+  year          = 2005
 }
 
 @inproceedings{erdweg12layout-sensitive,
