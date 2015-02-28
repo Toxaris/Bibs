@@ -54,6 +54,7 @@ Conferences:
 @string{FOSD    = ProcOf # "Workshop on Feature-Oriented Software Development"}
 @string{VAMOS   = ProcOf # "Workshop on Variability Modelling of Software-intensive Systems"}
 @string{PPDP    = ProcOf # "Conference on Principles and Practice of Declarative Programming"}
+@string{RTA-TLCA = ProcOf # "Joint Conference on Rewriting Techniques and Applications and Typed Lambda Calculi and Applications"}
 
 Publishers:
 
@@ -488,18 +489,20 @@ Papers:
 
 @inproceedings{reynolds75user,
   author        = {Reynolds, John C.},
-  title         = {User-defined types and procedural data structures as complementary approaches to data abstraction},
-  year          = {1975},
-  institution   = {Department of Computer Science, Carnegie-Mellon University},
-  booktitle = {New Directions in Algorithmic Languages 1975"},
-  dates = "August 25--29",
-  place = "Munich",
-  editor = "Stephen A. Schuman",
-  organization = "IFIP Working Group 2.1 on {A}lgol",
-  publisher = "INRIA",
-  address = "Rocquencourt, France",
-  year = "1975",
-  pages = "157--168"
+  title         = {User-defined types and procedural data
+                   structures as complementary approaches to data
+                   abstraction},
+  booktitle     = {New Directions in Algorithmic Languages 1975},
+  year          = 1975,
+  editor        = {Schuman, Stephen},
+  pages         = {157--168},
+  address       = {Rocquencourt, France},
+  organization  = {IFIP Working Group 2.1 on {A}lgol},
+  publisher     = {INRIA},
+  institution   = {Department of Computer Science,
+                   Carnegie-Mellon University},
+  dates         = {August 25--29},
+  place         = {Munich}
 }
 
 
@@ -2121,55 +2124,71 @@ The above is a Master's thesis.
   address       = Amsterdam,
 }
 
-@inproceedings{Cook:2009:UDA:1640089.1640133,
- author = {Cook, William R.},
- title = {On Understanding Data Abstraction, Revisited},
- booktitle = {Proceedings of the 24th ACM SIGPLAN Conference on Object Oriented Programming Systems Languages and Applications},
- series = {OOPSLA '09},
- year = {2009},
- location = {Orlando, Florida, USA},
- pages = {557--572},
- numpages = {16},
- publisher = {ACM},
- address = {New York, NY, USA}
+@inproceedings{cook09understanding,
+  author        = {Cook, William R.},
+  title         = {On Understanding Data Abstraction, Revisited},
+  booktitle     = OOPSLA,
+  year          = 2009,
+  pages         = {557--572},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Orlando,
+  numpages      = 16,
 } 
 
-@inproceedings{janzen06,
-    author = {Janzen, Doug and de Volder, Kris},
-    booktitle = {European conference on object-oriented programming (ECOOP)},
-    pages = {195--218},
-    publisher = {Springer-Verlag},
-    series = {LNCS},
-    title = {Programming with Crosscutting Effective Views},
-    volume = {3086},
-    year = {2004}
+@inproceedings{janzen06programming,
+  author        = {Janzen, Doug and
+                   de Volder, Kris},
+  title         = {Programming with Crosscutting Effective Views},
+  booktitle     = ECOOP,
+  year          = 2004,
+  pages         = {195--218},
+  publisher     = LNCS # 3086,
 }
 
-@inproceedings{Ager:2003:FCE:888251.888254,
- author = {Ager, Mads Sig and Biernacki, Dariusz and Danvy, Olivier and Midtgaard, Jan},
- title = {A Functional Correspondence Between Evaluators and Abstract Machines},
- booktitle = {Proceedings of the 5th ACM SIGPLAN International Conference on Principles and Practice of Declaritive Programming},
- series = {PPDP '03},
- year = {2003},
- location = {Uppsala, Sweden},
- pages = {8--19},
- numpages = {12},
- publisher = {ACM},
- address = {New York, NY, USA}
+@inproceedings{ager03functional,
+  author        = {Ager, Mads Sig and
+                   Biernacki, Dariusz and
+                   Danvy, Olivier and
+                   Midtgaard, Jan},
+  title         = {A Functional Correspondence Between Evaluators
+                   and Abstract Machines},
+  booktitle     = PPDP,
+  year          = 2003,
+  pages         = {8--19},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Uppsala,
+  numpages      = 12
 }
 
-@article{Pottier:2006:PTD:1145489.1145530,
- author = {Pottier, Fran\c{c}ois and Gauthier, Nadji},
- title = {Polymorphic Typed Defunctionalization and Concretization},
- journal = {Higher Order Symbol. Comput.},
- issue_date = {March     2006},
- volume = {19},
- number = {1},
- month = mar,
- year = {2006},
- issn = {1388-3690},
- pages = {125--162},
- numpages = {38},
- publisher = {Kluwer Academic Publishers},
+@article{pottier06polymorphic,
+  author        = {Pottier, Fran\c{c}ois and
+                   Gauthier, Nadji},
+  title         = {Polymorphic Typed Defunctionalization and
+                   Concretization},
+  journal       = HOSC,
+  year          = 2006,
+  volume        = 19,
+  number        = 1,
+  pages         = {125--162},
+  month         = mar,
+  issn          = {1388-3690},
+  numpages      = 38,
+  publisher     = Kluwer,
 } 
 
+@inproceedings{setzer14unnesting,
+  author        = {Setzer, Anton and
+                   Abel, Andreas and
+                   Pientka, Brigitte and
+                   Thibodeau, David},
+  title         = {Unnesting of Copatterns},
+  booktitle     = RTA-TLCA,
+  publisher     = LNCS # 8560,
+  year          = 2014,
+  editor        = {Dowek, Gilles},
+  pages         = {31-45},
+  isbn          = {978-3-319-08917-1},
+  doi           = {10.1007/978-3-319-08918-8_3},
+}
