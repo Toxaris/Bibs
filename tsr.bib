@@ -68,6 +68,8 @@ Conferences:
                 = ProcOf # "Dagstuhl Seminar on Domain-Specific Program Generation, March 2003"}
 @string{ICSE    = ProcOf # "International Conference on Software Engineering"}
 @string{Onword  = OOPSLA # " (Onword! track)"}
+@string{PPDP    = ProcOf # "Conference on Principles and Practice of Declarative Programming"}
+@string{RTA-TLCA = ProcOf # "Joint Conference on Rewriting Techniques and Applications and Typed Lambda Calculi and Applications"}
 
 Publishers:
 
@@ -107,6 +109,7 @@ Countries:
 @string{DE = ", Germany"}
 @string{GB = ", United Kingdom"}
 @string{IE = ", Ireland"}
+@string{IT = ", Italy"}
 @string{JP = ", Japan"}
 @string{NL = ", The Netherlands"}
 @string{PT = ", Portugal"}
@@ -201,6 +204,7 @@ Towns:
 @string{Dublin              = "Dublin"                  #  IE}
 @string{Edinburgh           = "Edinburgh"               #  GB}
 @string{Essex               = "Essex"                   #  GB}
+@string{Florence            = "Florence"                #  IT}
 @string{Heidelberg          = "Heidelberg"              #  DE}
 @string{Hingham             = "Hingham"                 #  US-MA}
 @string{Ithaca              = "Ithaca"                  #  US-NY}
@@ -221,6 +225,7 @@ Towns:
 @string{Orlando             = "Orlando"                 #  US-FL}
 @string{Philadelphia        = "Philadelphia"            #  US-PA}
 @string{Portland            = "Portland"                #  US-OR}
+@string{Rome                = "Rome"                    #  IT}
 @string{SaltLakeCity        = "Salt Lake City"          #  US-UT}
 @string{SanAntonio          = "San Antonio"             #  US-TX}
 @string{SanDiego            = "San Diego"               #  US-CA}
@@ -364,6 +369,15 @@ Papers:
   pages         =  {117--151},
   publisher     =  ElsevierNorthHolland,
   address       =  Amsterdam
+}
+
+@inproceedings{loh06open,
+  author        = {L{\"o}h, Andres and Hinze, Ralf},
+  title         = {Open data types and open functions},
+  booktitle     = ProcOf # {international conference on Principles and practice of declarative programming},
+  pages         = {133--144},
+  year          = {2006},
+  organization  = {ACM}
 }
 
 @inproceedings{johann08foundations,
@@ -530,6 +544,33 @@ Papers:
   doi           = {http://doi.acm.org/10.1145/800194.805852},
   publisher     = ACM,
   address       = NewYork
+}
+
+@inproceedings{reynolds75user,
+  author        = {Reynolds, John C.},
+  title         = {User-defined types and procedural data
+                   structures as complementary approaches to data
+                   abstraction},
+  booktitle     = {New Directions in Algorithmic Languages 1975},
+  year          = 1975,
+  editor        = {Schuman, Stephen},
+  pages         = {157--168},
+  address       = {Rocquencourt, France},
+  organization  = {IFIP Working Group 2.1 on {A}lgol},
+  publisher     = {INRIA},
+  institution   = {Department of Computer Science,
+                   Carnegie-Mellon University},
+  dates         = {August 25--29},
+  place         = {Munich}
+}
+
+@inproceedings{cook90object,
+  author        = {Cook, William R.},
+  title         = {Object-Oriented Programming Versus ABstract Data Types},
+  year          = {1990},
+  booktitle     = ProcOf # "REX Workshop / School on the Foundations of Object-Oriented Languages",
+  publisher     = Springer,
+  pages         = {151--178}
 }
 
 @article{mccarthy60recursive,
@@ -1369,6 +1410,15 @@ The above is a Master's thesis.
   pages        = {130--174}
 }
 
+@inproceedings{gibbons08unfolding,
+  author       = {Gibbons, Jeremy},
+  title        = {Unfolding abstract datatypes},
+  booktitle    = {Mathematics of Program Construction},
+  pages        = {110--133},
+  year         = {2008},
+  organization = Springer
+}
+
 @inproceedings{danvy03tagging,
   author        = {Danvy, Olivier and
                    L\'{o}pez, Pablo E. Mart\'{\i}nez},
@@ -1391,14 +1441,14 @@ The above is a Master's thesis.
   publisher     = ACM,
   address       = NewYork,
   keywords      = {domain-specific languages, higher-order abstract syntax, type classes, unembedding},
-} 
+}
 
 @article{futamura71partial,
   author        = {Futamura, Y.},
   title         = {Partial Evaluation of Computation Process: An Approach to a Compiler-Compiler},
   journal       = {Systems, Computers, Controls},
   year          = {1971},
-  volume        = {2}, 
+  volume        = {2},
   number        = {5},
   pages         = {45--50}
 }
@@ -1490,7 +1540,7 @@ The above is a Master's thesis.
  pages          = {196--255},
  publisher      = ACM,
  address        = NewYork
-} 
+}
 
 @article{lewis74attributed,
   author        = {Lewis, P. M. and
@@ -1519,7 +1569,7 @@ The above is a Master's thesis.
   pages         = {128--142}
 }
 
-@article{hedin2000reference,
+@article{hedin00reference,
   author        = {Hedin, G{\"o}rel},
   title         = {Reference attributed grammars},
   journal       = {Informatica (Slovenia)},
@@ -1541,7 +1591,7 @@ The above is a Master's thesis.
   numpages      = 15,
   publisher     = ACM,
   address       = NewYork
-} 
+}
 
 @article{magnusson07circular,
   author        = {Magnusson, Eva and
@@ -1569,7 +1619,7 @@ The above is a Master's thesis.
   pages         = {166--200},
   numpages      = 35,
   publisher     = LNCS # "6491"
-} 
+}
 
 @article{vanwyk10silver,
   author        = {Van Wyk, Eric and
@@ -1607,7 +1657,7 @@ The above is a Master's thesis.
    ee           = {http://dx.doi.org/10.1007/10704973_4},
    bibsource    = {DBLP, http://dblp.uni-trier.de}
  }
- 
+
 @article{demoor00first-class,
   author        = {{De Moor}, Oege and
                    Backhouse, Kevin and
@@ -1617,7 +1667,7 @@ The above is a Master's thesis.
   year          = 2000,
   volume        = 24,
 }
- 
+
 @article{sloane13pure,
   author        = {Sloane, Anthony M. and
                    Kats, Lennart C.L. and
@@ -1693,6 +1743,16 @@ The above is a Master's thesis.
   pages         = {47 - 69},
 }
 
+@article{swierstra08data,
+	Author = {Swierstra, Wouter},
+	Journal = JFP,
+	Number = {04},
+	Pages = {423--436},
+	Title = {Data types {\`a} la carte},
+	Volume = {18},
+	Year = {2008}
+}
+
 @inproceedings{gibbons06design,
   author        = {Gibbons, Jeremy},
   title         = {Design Patterns as Higher-order
@@ -1711,6 +1771,17 @@ The above is a Master's thesis.
   booktitle     = ECOOP,
   year          = 2009,
   publisher     = LNCS # {5653}
+}
+
+@inproceedings{clifton00multijava,
+  author        = {Clifton, Curtis and Leavens, Gary T and Chambers, Craig and Millstein, Todd},
+  title         = {MultiJava: Modular open classes and symmetric multiple dispatch for Java},
+  booktitle     = {ACM Sigplan Notices},
+  volume        = {35},
+  number        = {10},
+  pages         = {130--145},
+  year          = {2000},
+  organization  = ACM
 }
 
 @book{deransart88attribute,
@@ -1771,6 +1842,104 @@ The above is a Master's thesis.
   address       = NewYork
 }
 
+@inproceedings{rodriguez09generic,
+  author        = {Rodriguez Yakushev, Alexey and
+                   Holdermans, Stefan and
+                   L\"{o}h, Andres and
+                   Jeuring, Johan},
+  title         = {Generic Programming with Fixed Points for
+                   Mutually Recursive Datatypes},
+  booktitle     = ICFP,
+  year          = 2009,
+  pages         = {233--244},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Edinburgh,
+  numpages      = 12
+}
+
+@inproceedings{oliveira08visitor,
+  author        = {Oliveira, Bruno C.d.S. and
+                   Wang, Meng and
+                   Gibbons, Jeremy},
+  title         = {The Visitor Pattern As a Reusable, Generic,
+                   Type-safe Component},
+  booktitle     = OOPSLA,
+  year          = 2008,
+  pages         = {439--456},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Nashville,
+  numpages      = 18,
+}
+
+@inproceedings{oliveira05typecase,
+  author        = {Oliveira, Bruno C. d. S. and
+                   Gibbons, Jeremy},
+  title         = {TypeCase:
+                   A Design Pattern for Type-indexed Functions},
+  booktitle     = HaskellWorkshop,
+  year          = 2005,
+  address       = NewYork,
+  publisher     = ACM,
+  isbn          = {1-59593-071-X},
+  location      = Tallinn,
+  numpages      = 12
+}
+
+@book{pierce02types
+  author        = {Pierce, Benjamin C.},
+  title         = {Types and Programming Languages},
+  publisher     = MIT,
+  year          = {2002}
+}
+
+@inproceedings{laemmel08expr,
+  author        = {L{\"a}mmel, Ralf and
+                   Rypacek, Ondrej},
+  title         = {{The Expression Lemma}},
+  booktitle     = MPC,
+  year          = 2008,
+  month         = jul,
+  publisher     = LNCS # {5133},
+}
+
+@inbook{jacobs95classes,
+  author        = {Jacobs, Bart},
+  title         = {Objects and Classes, Coalgebraically},
+  publisher     = Springer,
+  year          = 1995,
+  pages         = {83--103},
+  booktitle     = {Object Orientation with Parallelism and
+                   Persistence},
+  location      = US
+}
+
+@book{abadi96theory,
+  author        = {Abadi, Martin and
+                   Cardelli, Luca},
+  title         = {A Theory of Objects},
+  publisher     = Springer,
+  year          = 1996
+}
+
+@article{kiselyov05oohaskell,
+  author        = {Kiselyov, Oleg and
+                   Laemmel, Ralf},
+  title         = {Haskell's Overlooked Object System},
+  journal       = {CoRR},
+  year          = 2005
+}
+
+@inproceedings{odersky05independently,
+  author        = {Odersky, Martin and
+                   Zenger, Matthias},
+  title         = {Independently Extensible Solutions to the
+                   Expression Problem},
+  booktitle     = FOOL,
+  year          = 2005
+}
+
 @inproceedings{oliveira08visitor,
   author        = {Oliveira, Bruno C.d.S. and
                    Wang, Meng and
@@ -1807,16 +1976,6 @@ The above is a Master's thesis.
   year          = {2002}
 }
 
-@inproceedings{laemmel08expr,
-  author        = {L{\"a}mmel, Ralf and
-                   Rypacek, Ondrej},
-  title         = {{The Expression Lemma}},
-  booktitle     = MPC,
-  year          = 2008,
-  month         = jul,
-  publisher     = LNCS
-}
-
 @inbook{jacobs95classes,
   author        = {Jacobs, Bart},
   title         = {Objects and Classes, Coalgebraically},
@@ -1828,15 +1987,25 @@ The above is a Master's thesis.
   location      = US
 }
 
-@inproceedings{rendel14oa2ag,
-  author        = {Rendel, Tillmann and
-                   Brachth{\"a}user, Jonathan and
-                   Ostermann, Klaus},
-  title         = {From Object Algebras to Attribute Grammars},
-  booktitle     = OOPSLA,
+@book{rutten98automata,
+  author        = {Rutten, Jan JMM},
+  title         = {Automata and Coinduction (An Exercise in Coalgebra)},
+  year          = 1998,
+  publisher     = Springer
+}
+
+@inbook{brachthaeuser14modularization,
+  author        = {Brachth{\"a}user, Jonathan},
+  title         = {Modularization of Algorithms on Complex Data Structures: An Encoding of Typesafe Extensible Functional Objects},
   year          = 2014,
-  publisher     = {Conditionally accepted for presentation at
-                   OOPSLA}
+  note          = {Master Thesis, University of Marburg, Germany}
+}
+
+@phdthesis{barbosa01components,
+  author        = {Barbosa, Lu{\i}s Soares},
+  title         = {Components as coalgebras},
+  year          = 2001,
+  school        = {Universidade do Minho}
 }
 
 @book{abadi96theory,
@@ -1945,13 +2114,14 @@ The above is a Master's thesis.
 
 @inproceedings{rendel14object,
   author        = {Rendel, Tillmann and
-                   Brachth{\"a}user, Jonathan and
+                   Brachth{\"a}user,
+                   Jonathan and
                    Ostermann, Klaus},
-  title         = {From Object Algebras to Attributes Grammars},
+  title         = {From Object Algebras to Attribute Grammars},
   booktitle     = OOPSLA,
   year          = 2014,
-  publisher     = ACM,
   address       = NewYork,
+  publisher     = ACM,
   location      = Portland
 }
 
@@ -2616,4 +2786,134 @@ The above is a Master's thesis.
   pages         = {201--224},
   isbn          = {978-3-540-40531-3},
   doi           = {10.1007/978-3-540-45070-2_10},
+
+@incollection{meertens96calculate,
+  author        = {Meertens, Lambert},
+  title         = {Calculate Polytypically!},
+  booktitle     = {Programming Languages: Implementations,
+                   Logics, and Programs},
+  publisher     = LNCS # {1140},
+  year          = 1996,
+  pages         = {1--16}
+}
+
+@incollection{hinze12generic,
+  author        = {Hinze, Ralf},
+  title         = {Generic Programming with Adjunctions},
+  booktitle     = {Generic and Indexed Programming},
+  publisher     = LNCS # {7470},
+  year          = 2012,
+  editor        = {Gibbons, Jeremy},
+  pages         = {47--129}
+
+@inproceedings{abel13copatterns,
+  author        = {Abel, Andreas and
+                   Pientka, Brigitte and
+                   Thibodeau, David and
+                   Setzer, Anton},
+  title         = {Copatterns: Programming Infinite Structures by
+                   Observations},
+  booktitle     = POPL,
+  year          = 2013,
+  pages         = {27--38},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Rome,
+  keywords      = {coinduction, functional programming,
+                   introduction vs. elimination, message passing,
+                   pattern matching}
+}
+
+@inproceedings{danvy01defunctionalization,
+  author        = {Danvy, Olivier and
+                   Nielsen, Lasse R.},
+  title         = {Defunctionalization at Work},
+  booktitle     = PPDP,
+  year          = 2001,
+  pages         = {162--174},
+  isbn          = {1-58113-388-X},
+  location      = Florence,
+  numpages      = 13
+}
+
+@article{danvy09refunctionalization,
+  author        = {Danvy, Olivier and
+                   Millikin, Kevin},
+  title         = {Refunctionalization at Work},
+  journal       = SCP,
+  year          = 2009,
+  volume        = 74,
+  number        = 8,
+  pages         = {534--549},
+  publisher     = ElsevierNorthHolland,
+  address       = Amsterdam,
+}
+
+@inproceedings{cook09understanding,
+  author        = {Cook, William R.},
+  title         = {On Understanding Data Abstraction, Revisited},
+  booktitle     = OOPSLA,
+  year          = 2009,
+  pages         = {557--572},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Orlando,
+  numpages      = 16,
+}
+
+@inproceedings{janzen06programming,
+  author        = {Janzen, Doug and
+                   de Volder, Kris},
+  title         = {Programming with Crosscutting Effective Views},
+  booktitle     = ECOOP,
+  year          = 2004,
+  pages         = {195--218},
+  publisher     = LNCS # 3086,
+}
+
+@inproceedings{ager03functional,
+  author        = {Ager, Mads Sig and
+                   Biernacki, Dariusz and
+                   Danvy, Olivier and
+                   Midtgaard, Jan},
+  title         = {A Functional Correspondence Between Evaluators
+                   and Abstract Machines},
+  booktitle     = PPDP,
+  year          = 2003,
+  pages         = {8--19},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Uppsala,
+  numpages      = 12
+}
+
+@article{pottier06polymorphic,
+  author        = {Pottier, Fran\c{c}ois and
+                   Gauthier, Nadji},
+  title         = {Polymorphic Typed Defunctionalization and
+                   Concretization},
+  journal       = HOSC,
+  year          = 2006,
+  volume        = 19,
+  number        = 1,
+  pages         = {125--162},
+  month         = mar,
+  issn          = {1388-3690},
+  numpages      = 38,
+  publisher     = Kluwer,
+}
+
+@inproceedings{setzer14unnesting,
+  author        = {Setzer, Anton and
+                   Abel, Andreas and
+                   Pientka, Brigitte and
+                   Thibodeau, David},
+  title         = {Unnesting of Copatterns},
+  booktitle     = RTA-TLCA,
+  publisher     = LNCS # 8560,
+  year          = 2014,
+  editor        = {Dowek, Gilles},
+  pages         = {31-45},
+  isbn          = {978-3-319-08917-1},
+  doi           = {10.1007/978-3-319-08918-8_3},
 }
