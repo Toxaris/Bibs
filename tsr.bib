@@ -53,6 +53,8 @@ Conferences:
 @string{APLAS   = ProcOf # "Asian Symposium on Programming Languages and Systems"}
 @string{FOSD    = ProcOf # "Workshop on Feature-Oriented Software Development"}
 @string{VAMOS   = ProcOf # "Workshop on Variability Modelling of Software-intensive Systems"}
+@string{PPDP    = ProcOf # "Conference on Principles and Practice of Declarative Programming"}
+@string{RTA-TLCA = ProcOf # "Joint Conference on Rewriting Techniques and Applications and Typed Lambda Calculi and Applications"}
 
 Publishers:
 
@@ -88,6 +90,7 @@ Countries:
 @string{DE = ", Germany"}
 @string{GB = ", United Kingdom"}
 @string{IE = ", Ireland"}
+@string{IT = ", Italy"}
 @string{JP = ", Japan"}
 @string{NL = ", The Netherlands"}
 @string{PT = ", Portugal"}
@@ -164,6 +167,7 @@ Towns:
 @string{Dublin              = "Dublin"                  #  IE}
 @string{Edinburgh           = "Edinburgh"               #  GB}
 @string{Essex               = "Essex"                   #  GB}
+@string{Florence            = "Florence"                #  IT}
 @string{Heidelberg          = "Heidelberg"              #  DE}
 @string{Hingham             = "Hingham"                 #  US-MA}
 @string{Ithaca              = "Ithaca"                  #  US-NY}
@@ -180,6 +184,7 @@ Towns:
 @string{Nijmegen            = "Nijmegen"                #  NL}
 @string{Orlando             = "Orlando"                 #  US-FL}
 @string{Philadelphia        = "Philadelphia"            #  US-PA}
+@string{Rome                = "Rome"                    #  IT}
 @string{SaltLakeCity        = "Salt Lake City"          #  US-UT}
 @string{SanAntonio          = "San Antonio"             #  US-TX}
 @string{SanFrancisco        = "San Francisco"           #  US-CA}
@@ -1857,7 +1862,80 @@ The above is a Master's thesis.
   title         = {{The Expression Lemma}},
   booktitle     = MPC,
   year          = 2008,
+  month         = jul,
   publisher     = LNCS # {5133},
+}
+
+@inbook{jacobs95classes,
+  author        = {Jacobs, Bart},
+  title         = {Objects and Classes, Coalgebraically},
+  publisher     = Springer,
+  year          = 1995,
+  pages         = {83--103},
+  booktitle     = {Object Orientation with Parallelism and
+                   Persistence},
+  location      = US
+}
+
+@book{abadi96theory,
+  author        = {Abadi, Martin and
+                   Cardelli, Luca},
+  title         = {A Theory of Objects},
+  publisher     = Springer,
+  year          = 1996
+}
+
+@article{kiselyov05oohaskell,
+  author        = {Kiselyov, Oleg and
+                   Laemmel, Ralf},
+  title         = {Haskell's Overlooked Object System},
+  journal       = {CoRR},
+  year          = 2005
+}
+
+@inproceedings{odersky05independently,
+  author        = {Odersky, Martin and
+                   Zenger, Matthias},
+  title         = {Independently Extensible Solutions to the
+                   Expression Problem},
+  booktitle     = FOOL,
+  year          = 2005
+}
+
+@inproceedings{oliveira08visitor,
+  author        = {Oliveira, Bruno C.d.S. and
+                   Wang, Meng and
+                   Gibbons, Jeremy},
+  title         = {The Visitor Pattern As a Reusable, Generic,
+                   Type-safe Component},
+  booktitle     = OOPSLA,
+  year          = 2008,
+  pages         = {439--456},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Nashville,
+  numpages      = 18,
+}
+
+@inproceedings{oliveira05typecase,
+  author        = {Oliveira, Bruno C. d. S. and
+                   Gibbons, Jeremy},
+  title         = {TypeCase:
+                   A Design Pattern for Type-indexed Functions},
+  booktitle     = HaskellWorkshop,
+  year          = 2005,
+  address       = NewYork,
+  publisher     = ACM,
+  isbn          = {1-59593-071-X},
+  location      = Tallinn,
+  numpages      = 12
+}
+
+@book{pierce02plt,
+  author        = {Pierce, Benjamin C.},
+  title         = {Types and Programming Languages},
+  publisher     = MIT,
+  year          = {2002}
 }
 
 @inbook{jacobs95classes,
@@ -1876,17 +1954,6 @@ The above is a Master's thesis.
   title         = {Automata and coinduction (an exercise in coalgebra)},
   year          = 1998,
   publisher     = Springer
-}
-
-
-
-@inproceedings{rendel14oa2ag,
-  author        = {Rendel, Tillmann and
-                   Brachth{\"a}user, Jonathan and
-                   Ostermann, Klaus},
-  title         = {From Object Algebras to Attribute Grammars},
-  booktitle     = OOPSLA,
-  year          = 2014
 }
 
 @inbook{brachthaeuser14modularization,
@@ -2007,13 +2074,16 @@ The above is a Master's thesis.
   year          = 2013
 }
 
-@misc{rendel14object,
+@inproceedings{rendel14object,
   author        = {Rendel, Tillmann and
                    Brachth{\"a}user, Jonathan and
                    Ostermann, Klaus},
-  title         = {From Object Algebras to Attributes Grammars},
-  howpublished  = {Submitted to OOPSLA},
-  year          = 2014
+  title         = {From Object Algebras to Attribute Grammars},
+  booktitle     = OOPSLA,
+  year          = 2014,
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Portland
 }
 
 @inproceedings{rendel10invertible,
@@ -2129,19 +2199,20 @@ The above is a Master's thesis.
 }
 
 @inproceedings{tobin-hochstadt11languages,
- author         = {Tobin-Hochstadt, Sam and
+  author        = {Tobin-Hochstadt, Sam and
                    St-Amour, Vincent and
                    Culpepper, Ryan and
                    Flatt, Matthew and
                    Felleisen, Matthias},
- title          = {Languages As Libraries},
- booktitle      = PLDI,
- year           = {2011},
- location       = {San Jose, California, USA},
- pages          = {132--141},
- publisher      = ACM,
- address        = NewYork,
- keywords       = {extensible languages, macros, modules, typed racket},
+  title         = {Languages As Libraries},
+  booktitle     = PLDI,
+  year          = 2011,
+  pages         = {132--141},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = {San Jose, California, USA},
+  keywords      = {extensible languages, macros, modules, typed
+                   racket}
 }
 
 @incollection{meertens96calculate,
@@ -2162,4 +2233,115 @@ The above is a Master's thesis.
   year          = 2012,
   editor        = {Gibbons, Jeremy},
   pages         = {47--129}
+
+@inproceedings{abel13copatterns,
+  author        = {Abel, Andreas and
+                   Pientka, Brigitte and
+                   Thibodeau, David and
+                   Setzer, Anton},
+  title         = {Copatterns: Programming Infinite Structures by
+                   Observations},
+  booktitle     = POPL,
+  year          = 2013,
+  pages         = {27--38},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Rome,
+  keywords      = {coinduction, functional programming,
+                   introduction vs. elimination, message passing,
+                   pattern matching}
+}
+
+@inproceedings{danvy01defunctionalization,
+  author        = {Danvy, Olivier and
+                   Nielsen, Lasse R.},
+  title         = {Defunctionalization at Work},
+  booktitle     = PPDP,
+  year          = 2001,
+  pages         = {162--174},
+  isbn          = {1-58113-388-X},
+  location      = Florence,
+  numpages      = 13
+}
+
+@article{danvy09refunctionalization,
+  author        = {Danvy, Olivier and
+                   Millikin, Kevin},
+  title         = {Refunctionalization at Work},
+  journal       = SCP,
+  year          = 2009,
+  volume        = 74,
+  number        = 8,
+  pages         = {534--549},
+  publisher     = ElsevierNorthHolland,
+  address       = Amsterdam,
+}
+
+@inproceedings{cook09understanding,
+  author        = {Cook, William R.},
+  title         = {On Understanding Data Abstraction, Revisited},
+  booktitle     = OOPSLA,
+  year          = 2009,
+  pages         = {557--572},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Orlando,
+  numpages      = 16,
+}
+
+@inproceedings{janzen06programming,
+  author        = {Janzen, Doug and
+                   de Volder, Kris},
+  title         = {Programming with Crosscutting Effective Views},
+  booktitle     = ECOOP,
+  year          = 2004,
+  pages         = {195--218},
+  publisher     = LNCS # 3086,
+}
+
+@inproceedings{ager03functional,
+  author        = {Ager, Mads Sig and
+                   Biernacki, Dariusz and
+                   Danvy, Olivier and
+                   Midtgaard, Jan},
+  title         = {A Functional Correspondence Between Evaluators
+                   and Abstract Machines},
+  booktitle     = PPDP,
+  year          = 2003,
+  pages         = {8--19},
+  address       = NewYork,
+  publisher     = ACM,
+  location      = Uppsala,
+  numpages      = 12
+}
+
+@article{pottier06polymorphic,
+  author        = {Pottier, Fran\c{c}ois and
+                   Gauthier, Nadji},
+  title         = {Polymorphic Typed Defunctionalization and
+                   Concretization},
+  journal       = HOSC,
+  year          = 2006,
+  volume        = 19,
+  number        = 1,
+  pages         = {125--162},
+  month         = mar,
+  issn          = {1388-3690},
+  numpages      = 38,
+  publisher     = Kluwer,
+}
+
+@inproceedings{setzer14unnesting,
+  author        = {Setzer, Anton and
+                   Abel, Andreas and
+                   Pientka, Brigitte and
+                   Thibodeau, David},
+  title         = {Unnesting of Copatterns},
+  booktitle     = RTA-TLCA,
+  publisher     = LNCS # 8560,
+  year          = 2014,
+  editor        = {Dowek, Gilles},
+  pages         = {31-45},
+  isbn          = {978-3-319-08917-1},
+  doi           = {10.1007/978-3-319-08918-8_3},
 }
