@@ -67,7 +67,7 @@ Conferences:
 @string{dspg-dagstuhl
                 = ProcOf # "Dagstuhl Seminar on Domain-Specific Program Generation, March 2003"}
 @string{ICSE    = ProcOf # "International Conference on Software Engineering"}
-@string{Onword  = OOPSLA # " (Onword! track)"}
+@string{Onward  = OOPSLA # " (Onward! track)"}
 @string{PPDP    = ProcOf # "Conference on Principles and Practice of Declarative Programming"}
 @string{RTA-TLCA = ProcOf # "Joint Conference on Rewriting Techniques and Applications and Typed Lambda Calculi and Applications"}
 
@@ -213,6 +213,7 @@ Towns:
 @string{Lausanne            = "Lausanne"                #  CH}
 @string{London              = "London"                  #  GB}
 @string{Melbourne           = "Melbourne"               #  AU}
+@string{Minneapolis         = "Minneapolis"             #  US-MN}
 @string{Montreal            = "Montreal"                #  CA-QC}
 @string{Nashville           = "Nashville"               #  US-TN}
 @string{NewHaven            = "New Haven"               #  US-CT}
@@ -1775,13 +1776,14 @@ The above is a Master's thesis.
 
 @inproceedings{clifton00multijava,
   author        = {Clifton, Curtis and Leavens, Gary T and Chambers, Craig and Millstein, Todd},
-  title         = {MultiJava: Modular open classes and symmetric multiple dispatch for Java},
-  booktitle     = {ACM Sigplan Notices},
-  volume        = {35},
-  number        = {10},
+  title         = {{MultiJava}: Modular open classes and symmetric multiple dispatch for {Java}},
+  booktitle     = OOPSLA,
   pages         = {130--145},
-  year          = {2000},
-  organization  = ACM
+  year          = 2000,
+  address       = NewYork,
+  publisher     = ACM,
+  numpages      = 16,
+  location      = Minneapolis,
 }
 
 @book{deransart88attribute,
@@ -1947,17 +1949,6 @@ The above is a Master's thesis.
   year          = {2002}
 }
 
-@inbook{jacobs95classes,
-  author        = {Jacobs, Bart},
-  title         = {Objects and Classes, Coalgebraically},
-  publisher     = Springer,
-  year          = 1995,
-  pages         = {83--103},
-  booktitle     = {Object Orientation with Parallelism and
-                   Persistence},
-  location      = US
-}
-
 @book{rutten98automata,
   author        = {Rutten, Jan JMM},
   title         = {Automata and Coinduction (An Exercise in Coalgebra)},
@@ -1965,7 +1956,7 @@ The above is a Master's thesis.
   publisher     = Springer
 }
 
-@inbook{brachthaeuser14modularization,
+@mastersthesis{brachthaeuser14modularization,
   author        = {Brachth{\"a}user, Jonathan},
   title         = {Modularization of Algorithms on Complex Data Structures: An Encoding of Typesafe Extensible Functional Objects},
   year          = 2014,
@@ -1977,14 +1968,6 @@ The above is a Master's thesis.
   title         = {Components as coalgebras},
   year          = 2001,
   school        = {Universidade do Minho}
-}
-
-@book{abadi96theory,
-  author        = {Abadi, Martin and
-                   Cardelli, Luca},
-  title         = {A Theory of Objects},
-  publisher     = Springer,
-  year          = 1996
 }
 
 @article{kiselyov05oohaskell,
@@ -2354,7 +2337,7 @@ The above is a Master's thesis.
 @inproceedings{sheard04languages,
   author        = {Sheard, Tim},
   title         = {Languages of the Future},
-  booktitle     = Onword,
+  booktitle     = Onward,
   year          = 2004,
   pages         = {116--119},
   address       = NewYork,
@@ -2767,7 +2750,7 @@ The above is a Master's thesis.
   publisher     = LNCS # {7470},
   year          = 2012,
   editor        = {Gibbons, Jeremy},
-  pages         = {47--129}
+  pages         = {47--129},
 }
 
 @inproceedings{abel13copatterns,
